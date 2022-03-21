@@ -2,7 +2,10 @@ from math import sqrt
 from .figure import Figure
 
 class Triangle(Figure):
+<<<<<<< HEAD
     
+=======
+>>>>>>> af83e24860f0761945e90660e04be88715313dc1
     def __init__(self, *arg):
         super().__init__(*arg)
         if(len(self.dimensions) != 3):

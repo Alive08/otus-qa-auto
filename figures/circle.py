@@ -20,5 +20,11 @@ class Circle(Figure):
     )
 
     area = property(lambda self: self.radius ** 2 * 4 * pi)
+<<<<<<< HEAD
 
     perimeter = property(lambda self: self.radius * 2 * pi)
+=======
+
+    perimeter = property(lambda self: self.radius * 2 * pi)
+
+>>>>>>> af83e24860f0761945e90660e04be88715313dc1
