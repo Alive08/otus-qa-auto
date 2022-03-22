@@ -1,26 +1,22 @@
 class Figure():
-    
-    def __init__(self, *arg):
-        self.dimensions = arg
+
+    def __init__(self, *args):
+
         self.name = 'A ' + type(self).__name__.lower()
-    
-    def _set_dimensions(self, value):
-        if (value is None):
-            raise(ValueError('Empty value'))
+        self._dimensions = args
+        
+    def _set_dimensions_data(self, value):
+        for v in value:
+            if not isinstance(v, (int, float)):
+                raise(ValueError("Wrong args"))
+        self._dimensions_data = value
 
-        if len(value) > 3:
-            raise(ValueError('Too many params'))
-        else:
-            self._dimensions = value
+    def _get_dimensions_data(self):
+        return self._dimensions_data
 
-    def _get_dimensions(self):
-        return self._dimensions
-
-    dimensions = property(
-        fget=_get_dimensions,
-        fset=_set_dimensions,
-        fdel=None,
-        doc="The Dimensions property"
+    _dimensions = property(
+        fget=_get_dimensions_data,
+        fset=_set_dimensions_data
     )
 
     def _set_name(self, value):
@@ -38,4 +34,4 @@ class Figure():
         if (isinstance(figure, Figure)):
             return self.area + figure.area
         else:
-            raise(ValueError('The argument is not a Figure'))
+            raise(ValueError('The object given is not an instance of the Figure'))
