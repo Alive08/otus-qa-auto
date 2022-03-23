@@ -5,31 +5,25 @@ class Figure():
         self.name = 'A ' + type(self).__name__.lower()
         self._dimensions = args
         
-    def _set_dimensions_data(self, value):
-        for v in value:
-            if not isinstance(v, (int, float)):
-                raise(ValueError("Wrong args"))
-        self._dimensions_data = value
-
-    def _get_dimensions_data(self):
+    @property
+    def _dimensions(self):
         return self._dimensions_data
 
-    _dimensions = property(
-        fget=_get_dimensions_data,
-        fset=_set_dimensions_data
-    )
+    @_dimensions.setter
+    def _dimensions(self, value):
+        try:
+            self._dimensions_data = tuple(float(v) for v in value)
+        except ValueError:
+                raise(ValueError("Non-numeric value"))
 
-    def _set_name(self, value):
-        self._name = value
-    
-    def _get_name(self):
+    @property
+    def name(self):
         return self._name
 
-    name = property(
-        fget=_get_name,
-        fset=_set_name
-    )
-    
+    @name.setter
+    def name(self, value):
+        self._name = value
+        
     def add_area(self, figure):
         if (isinstance(figure, Figure)):
             return self.area + figure.area

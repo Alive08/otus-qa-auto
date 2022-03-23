@@ -8,25 +8,24 @@ class Triangle(Figure):
             raise(ValueError('Wrong args number'))
         super().__init__(*args)
 
-    def _get_dimensions(self):
+    @property
+    def dimensions(self):
         return self._dimensions
     
-    def _set_dimensions(self, value):
+    @dimensions.setter
+    def dimensions(self, value):
         if (isinstance(value, tuple) and len(value) == 3):
             self._dimensions = value
         else:
             raise(ValueError('Wrong args number'))
         
-    dimensions = property(
-        fget=_get_dimensions,
-        fset=_set_dimensions
-    )
-    
-    perimeter = property(lambda self: self.dimensions[0] + self.dimensions[1] + self.dimensions[2])
+    @property    
+    def perimeter(self):
+        return self.dimensions[0] + self.dimensions[1] + self.dimensions[2]
 
-    _semi_perimeter = property(lambda self: self.perimeter / 2)
-
-    area = property(lambda self: sqrt((self._semi_perimeter - self.dimensions[0]) *
-                                      (self._semi_perimeter - self.dimensions[1]) *
-                                      (self._semi_perimeter - self.dimensions[2]) *
-                                       self._semi_perimeter))
+    @property
+    def area(self):
+        return sqrt((self.perimeter / 2 - self.dimensions[0]) *
+                    (self.perimeter / 2 - self.dimensions[1]) *
+                    (self.perimeter / 2 - self.dimensions[2]) *
+                     self.perimeter / 2)

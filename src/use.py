@@ -19,7 +19,7 @@ print(square.area)
 
 rectangle = Rectangle(5, 10)
 print(rectangle.name)
-rectangle.dimensions = 1,2
+# rectangle.dimensions = 1,2
 print(rectangle.dimensions)
 print(rectangle.perimeter)
 print(rectangle.area)

@@ -8,17 +8,22 @@ class Circle(Figure):
             raise(ValueError('Wrong args number'))
         super().__init__(*args)
 
-    def _get_radius(self):
+    @property
+    def radius(self):
         return self._dimensions[0]
     
-    def _set_radius(self, value):
+    @radius.setter   
+    def radius(self, value):
         self._dimensions = value,
     
-    radius = property(
-        fget=_get_radius,
-        fset=_set_radius
-    )
+    @property
+    def diameter(self):
+        return self.radius * 2
 
-    area = property(lambda self: self.radius ** 2 * 4 * pi)
+    @property
+    def area(self):
+        return self.radius ** 2 * pi
 
-    perimeter = property(lambda self: self.radius * 2 * pi)
+    @property
+    def perimeter(self):
+        return self.radius * 2 * pi

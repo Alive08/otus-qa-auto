@@ -7,17 +7,18 @@ class Square(Figure):
             raise(ValueError('Wrong args number'))
         super().__init__(*args)
 
-    def _get_side(self):
+    @property
+    def side(self):
         return self._dimensions[0]
     
-    def _set_side(self, value):
+    @side.setter
+    def side(self, value):
         self._dimensions = value,
-    
-    side = property(
-        fget=_get_side,
-        fset=_set_side
-    )
 
-    area = property(lambda self: self.side ** 2)
+    @property
+    def perimeter(self):
+        return self.side * 4
 
-    perimeter = property(lambda self: self.side * 4)
+    @property
+    def area(self):
+        return self.side ** 2
