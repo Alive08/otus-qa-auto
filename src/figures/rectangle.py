@@ -20,7 +20,7 @@ class Rectangle(Figure):
 
     @property
     def perimeter(self):
-        return (self.dimensions[0] + self.dimensions[1]) * 2
+        return sum(self.dimensions) * 2
     
     @property
     def area(self):

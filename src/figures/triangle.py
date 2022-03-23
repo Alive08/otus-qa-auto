@@ -21,7 +21,7 @@ class Triangle(Figure):
         
     @property    
     def perimeter(self):
-        return self.dimensions[0] + self.dimensions[1] + self.dimensions[2]
+        return sum(self.dimensions)
 
     @property
     def area(self):
