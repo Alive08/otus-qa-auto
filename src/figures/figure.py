@@ -4,7 +4,7 @@ class Figure():
 
         self.name = 'A ' + type(self).__name__.lower()
         self._dimensions = args
-        
+
     @property
     def _dimensions(self):
         return self._dimensions_data
@@ -13,8 +13,8 @@ class Figure():
     def _dimensions(self, value):
         try:
             self._dimensions_data = tuple(float(v) for v in value)
-        except ValueError:
-                raise(ValueError("Non-numeric value"))
+        except ValueError as e:
+            print(type(e), e)
 
     @property
     def name(self):
@@ -23,7 +23,7 @@ class Figure():
     @name.setter
     def name(self, value):
         self._name = value
-        
+
     def add_area(self, figure):
         if (isinstance(figure, Figure)):
             return self.area + figure.area

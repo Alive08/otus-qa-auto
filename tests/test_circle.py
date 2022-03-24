@@ -8,4 +8,3 @@ class TestCircle():
 
     def test_area(self):
         pass
-

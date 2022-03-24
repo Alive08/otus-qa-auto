@@ -3,7 +3,7 @@ from figures.rectangle import Rectangle
 from figures.square import Square
 from figures.triangle import Triangle
 
-circle = Circle(2)
+circle = Circle(20)
 print(circle.name)
 print(circle.radius)
 circle.radius = 10
