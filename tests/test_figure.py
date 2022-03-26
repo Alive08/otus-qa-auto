@@ -1,4 +1,4 @@
-from figures.figure import Figure
+from src.figures.figure import Figure
 import pytest
 
 test_data =[

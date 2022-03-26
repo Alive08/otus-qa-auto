@@ -1,7 +1,7 @@
-from figures.circle import Circle
-from figures.rectangle import Rectangle
-from figures.square import Square
-from figures.triangle import Triangle
+from src.figures.circle import Circle
+from src.figures.rectangle import Rectangle
+from src.figures.square import Square
+from src.figures.triangle import Triangle
 
 circle = Circle(20)
 print(circle.name)
