@@ -1,24 +1,15 @@
-from .figure import Figure
+from src.figures.rectangle import Rectangle
 
-class Square(Figure):
 
-    def __init__(self, *args):
-        if (len(args) != 1):
-            raise(ValueError('Wrong args number'))
-        super().__init__(*args)
+class Square(Rectangle):
+
+    def __init__(self, a):
+        super().__init__(a, a)
 
     @property
     def side(self):
         return self._dimensions[0]
-    
+
     @side.setter
     def side(self, value):
-        self._dimensions = value,
-
-    @property
-    def perimeter(self):
-        return self.side * 4
-
-    @property
-    def area(self):
-        return self.side ** 2
+        self._dimensions = (value, value)

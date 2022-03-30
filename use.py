@@ -1,36 +1,24 @@
+from src.figures.figure import Figure
 from src.figures.circle import Circle
 from src.figures.rectangle import Rectangle
 from src.figures.square import Square
 from src.figures.triangle import Triangle
 
-circle = Circle(20)
-print(circle.name)
-print(circle.radius)
-circle.radius = 10
-print(circle.perimeter)
-print(circle.area)
+circle = Circle(5)
+circle.radius = 6
 
 square = Square(10)
-print(square.name)
-print(square.side)
-square.side = 5
-print(square.perimeter)
-print(square.area)
+square.side = 8
 
 rectangle = Rectangle(5, 10)
-print(rectangle.name)
-rectangle.dimensions = 1,2
-print(rectangle.dimensions)
-print(rectangle.perimeter)
-print(rectangle.area)
+triangle = Triangle(10, 12, 15)
 
-triangle = Triangle(10,12,15)
-print(triangle.name)
-print(triangle.dimensions)
-triangle.dimensions = 20,25,23
-print(triangle.perimeter)
-print(triangle.area)
+for f in (circle, square, rectangle, triangle):
+    print(f"A {f} has dimensions {f._dimensions}, perimeter of {f.perimeter:.2f} and area of {f.area:.2f}")
 
-foo = (2,33,4)
+try:
+    triangle.dimensions = 10, 12, 19
+except ValueError:
+    print('Wrong dimensions')
 
 print(circle.add_area(triangle))

@@ -12,19 +12,20 @@ class Figure():
 
     @property
     def _dimensions(self):
-        return self._dimensions_data
+        return self.__dimensions_data
 
     @_dimensions.setter
     def _dimensions(self, value):
         if not value:
-            raise ValueError('Empty data given')
+            raise ValueError('No data given')
         for v in value:
             validate_number(v)
-        self._dimensions_data = value
+        # кортеж, в котором хранятся данные о размерах фигуры
+        self.__dimensions_data = value
 
     def add_area(self, figure):
-        if (isinstance(figure, type(self))):
+        if isinstance(figure, Figure):
             return self.area + figure.area
         else:
-            raise(ValueError(
-                f"The object given is not an instance of the {type(self)}"))
+            raise ValueError(
+                "The object given is not an instance of the Figure")
