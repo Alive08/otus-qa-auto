@@ -22,3 +22,8 @@ except ValueError:
     print('Wrong dimensions')
 
 print(circle.add_area(triangle))
+
+f = Figure(1)
+print(f)
+f.area = 2
+print(f.area)
