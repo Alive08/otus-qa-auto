@@ -2,7 +2,7 @@ from src.utils import validate_number
 
 
 class Figure():
-    "Обобщенный класс геометрической фигуры"
+    "Базовый класс для геометрической фигуры"
 
     def __new__(cls, *args, **kw):
         "Запрет на создание экземпляров базового класса"
@@ -13,6 +13,11 @@ class Figure():
 
     def __str__(self):
         return type(self).__name__.lower()
+
+    @classmethod
+    def raise_not_implemented(cls):
+        raise NotImplementedError(
+            f"Not implemented in the {cls.__name__} class")
 
     @property
     def _dimensions(self):
@@ -29,23 +34,19 @@ class Figure():
 
     @property
     def area(self):
-        raise NotImplementedError(
-            f"Not implemented in the {type(self).__name__} class")
+        self.raise_not_implemented()
 
     @area.setter
     def area(self, *args):
-        raise NotImplementedError(
-            f"Not implemented in the {type(self).__name__} class")
+        self.raise_not_implemented()
 
     @property
     def perimeter(self):
-        raise NotImplementedError(
-            f"Not implemented in the {type(self).__name__} class")
+        self.raise_not_implemented()
 
     @perimeter.setter
     def area(self, *args):
-        raise NotImplementedError(
-            f"Not implemented in the {type(self).__name__} class")
+        self.raise_not_implemented()
 
     def add_area(self, figure):
         if isinstance(figure, Figure):

@@ -1,4 +1,4 @@
-from src.figures.rectangle import Rectangle
+from src.figures_property.rectangle import Rectangle
 
 
 class Square(Rectangle):

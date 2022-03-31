@@ -1,8 +1,8 @@
-from src.figures.figure import Figure
-from src.figures.circle import Circle
-from src.figures.rectangle import Rectangle
-from src.figures.square import Square
-from src.figures.triangle import Triangle
+from src.figures_property.figure import Figure
+from src.figures_property.circle import Circle
+from src.figures_property.rectangle import Rectangle
+from src.figures_property.square import Square
+from src.figures_property.triangle import Triangle
 
 circle = Circle(5)
 circle.radius = 6
@@ -22,8 +22,3 @@ except ValueError:
     print('Wrong dimensions')
 
 print(circle.add_area(triangle))
-
-f = Figure(1)
-print(f)
-f.area = 2
-print(f.area)

@@ -1,4 +1,4 @@
-from src.figures.figure import Figure
+from src.figures_property.figure import Figure
 
 
 class Rectangle(Figure):

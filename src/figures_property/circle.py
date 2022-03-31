@@ -1,6 +1,5 @@
 from cmath import pi
-
-from src.figures.figure import Figure
+from src.figures_property.figure import Figure
 from src.utils import validate_number
 
 

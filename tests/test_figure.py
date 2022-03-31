@@ -1,5 +1,5 @@
 import pytest
-from src.figures.figure import Figure
+from figures_property.figure import Figure
 
 test_data =[
     ((1), 0),
