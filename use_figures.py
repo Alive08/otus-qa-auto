@@ -1,7 +1,7 @@
-from src.figures_descriptor.circle import Circle
-from src.figures_descriptor.square import Square
-from src.figures_descriptor.rectangle import Rectangle
-from src.figures_descriptor.triangle import Triangle
+from src.figures.circle import Circle
+from src.figures.square import Square
+from src.figures.rectangle import Rectangle
+from src.figures.triangle import Triangle
 
 
 c = Circle(10)
@@ -13,7 +13,7 @@ print(c.__dict__)
 
 s = Square(2)
 print(s.a)
-s.a = 5
+s.a = 8
 print(s.area)
 print(s.perimeter)
 print(s.__dict__)
@@ -34,3 +34,5 @@ print(t.a, t.b, t.c)
 print(t.area)
 print(t.perimeter)
 print(t.__dict__)
+
+print(c.add_area(t))

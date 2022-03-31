@@ -1,6 +1,6 @@
 from math import sqrt
 from src.descriptors import PositiveFloat
-from src.figures_descriptor.figure import Figure
+from src.figures.figure import Figure
 
 
 class Triangle(Figure):

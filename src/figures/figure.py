@@ -1,4 +1,3 @@
-from src.utils import validate_number
 from src.descriptors import NotImplementedAttribute
 
 

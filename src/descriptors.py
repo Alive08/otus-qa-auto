@@ -4,7 +4,8 @@ class PositiveFloat:
     @classmethod
     def verify_number(cls, number):
         if type(number) not in (int, float) or number <= 0:
-            raise TypeError("Параметр должен быть положительным числом больше нуля")
+            raise TypeError(
+                "Параметр должен быть положительным числом больше нуля")
 
     def __set_name__(self, owner, name):
         self.name = "__" + name
@@ -16,12 +17,9 @@ class PositiveFloat:
         self.verify_number(value)
         setattr(obj, self.name, value)
 
-    def __delete__(self, obj):
-        pass
-
 
 class NotImplementedAttribute:
-    "Дескриптор для нереализованных аттрибутов"
+    "Дескриптор-заглушка для нереализованных аттрибутов"
 
     def __get__(self, *args):
         raise NotImplementedError("Не реализовано")

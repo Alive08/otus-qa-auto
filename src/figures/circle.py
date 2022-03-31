@@ -1,6 +1,6 @@
 from cmath import pi
 from src.descriptors import PositiveFloat
-from src.figures_descriptor.figure import Figure
+from src.figures.figure import Figure
 
 
 class Circle(Figure):
