@@ -17,5 +17,5 @@ class Figure():
         if isinstance(figure, Figure):
             return self.area + figure.area
         else:
-            raise ValueError(
+            raise TypeError(
                 "The object given is not an instance of the Figure class")

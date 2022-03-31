@@ -4,7 +4,7 @@ from src.figures.rectangle import Rectangle
 
 class Square(Rectangle):
 
-    a = b = PositiveFloat()
+    b = a = PositiveFloat()
 
     def __init__(self, a):
         self.a = a

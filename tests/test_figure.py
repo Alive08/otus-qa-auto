@@ -1,30 +1,39 @@
 import pytest
-from figures_property.figure import Figure
+from src.figures.figure import Figure
 
-test_data =[
-    ((1), 0),
-    ((1,), 1),
-    ((1,2,3), 3),
-    (('1.0','2.0','3.0'), 3),
-    (('l',2,'З'), 0) ]
 
-class TestFigure():
+@pytest.fixture
+def subclass_instance():
 
-    f = Figure()
+    class F(Figure):
+        pass
 
-    def test_name(self):
-        assert self.f.name == 'A figure'
+    return F()
 
-    @pytest.mark.parametrize('param, expected', test_data)
-    def test_set_dimensions(self, param, expected):
-        self.f._dimensions = ()
-        try:
-            self.f._dimensions = param
-        except:
-            pass
-        assert len(self.f._dimensions) == expected
-    
-    def test_get_dimensions(self):
-        data = (1, '2', 3.333)
-        self.f._dimensions = data
-        assert self.f._dimensions == (1, 2.0, 3.333)
+
+def test_base_class_can_not_instantiate():
+    assert Figure() is None
+
+
+def test_subclass_can_instantiate(subclass_instance):
+    assert subclass_instance is not None
+
+
+def test_subclass_str(subclass_instance):
+    assert str(subclass_instance) == 'f'
+
+
+@pytest.mark.parametrize('param', [('area'), ('perimeter')])
+def test_not_implemented_attrs(subclass_instance, param):
+    with pytest.raises(NotImplementedError):
+        getattr(subclass_instance, param)
+
+
+def test_add_area_does_not_take_non_figure_instance(subclass_instance):
+    with pytest.raises(TypeError):
+        subclass_instance.add_area('Not a Figure but a String')
+
+
+def test_add_area_takes_figure_instance(subclass_instance):
+    with pytest.raises(NotImplementedError):
+        subclass_instance.add_area(subclass_instance)
