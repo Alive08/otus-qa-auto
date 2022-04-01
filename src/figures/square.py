@@ -1,10 +1,10 @@
-from src.descriptors import PositiveFloat
+from src.descriptors import NonNegative
 from src.figures.rectangle import Rectangle
 
 
 class Square(Rectangle):
 
-    b = a = PositiveFloat()
+    b = a = NonNegative()
 
     def __init__(self, a):
         self.a = a

@@ -18,11 +18,6 @@ def test_create_instance(radius, expected):
     else:
         assert c.radius == radius
     assert isinstance(c, Circle) == expected
-    
-
-
-def test_str():
-    assert str(Circle(1)) == 'circle'
 
 
 @pytest.mark.parametrize("radius, expected", test_data)
@@ -33,12 +28,16 @@ def test_set_radius(radius, expected):
     except Exception:
         assert not expected
     else:
-        assert expected
         assert c.radius == radius
+        assert expected
+
+
+def test_str():
+    assert str(Circle(1)) == 'circle'
 
 
 def test_diameter():
-    assert Circle(5).diameter == 10
+    assert Circle(4.2).diameter == 8.4
 
 
 def test_area():
@@ -50,4 +49,4 @@ def test_perimeter():
 
 
 def test_add_area():
-    assert Circle(2).add_area(Circle(1)) == pi * 5
+    assert Circle(2).add_area(Circle(3)) == pi * 13

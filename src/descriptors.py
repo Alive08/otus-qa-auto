@@ -1,28 +1,23 @@
-class PositiveFloat:
-    "Дескриптор для работы с положительными ненулевыми вещественными числами"
+class NonNegative:
+    '''
+    Дескриптор для работы с положительными ненулевыми вещественными числами
+    внимание - применение getattr() и setattr() опасно, поскольку обращение
+    через них перехватывается протоколом дескрипторов и возможна ошибка
+    RecursionError
+    '''
 
     @classmethod
     def verify_number(cls, number):
         if type(number) not in (int, float) or number <= 0:
-            raise TypeError(
+            raise ValueError(
                 "Параметр должен быть положительным числом больше нуля")
 
     def __set_name__(self, owner, name):
         self.name = "__" + name
 
-    def __get__(self, obj, owner):
-        return getattr(obj, self.name)
+    def __get__(self, instance, owner):
+        return instance.__dict__[self.name]
 
-    def __set__(self, obj, value):
+    def __set__(self, instance, value):
         self.verify_number(value)
-        setattr(obj, self.name, value)
-
-
-class NotImplementedAttribute:
-    "Дескриптор-заглушка для нереализованных аттрибутов"
-
-    def __get__(self, *args):
-        raise NotImplementedError("Не реализовано")
-
-    def __set__(self, *args):
-        raise NotImplementedError("Не реализовано")
+        instance.__dict__[self.name] = value

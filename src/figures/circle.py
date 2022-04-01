@@ -1,11 +1,11 @@
 from cmath import pi
-from src.descriptors import PositiveFloat
+from src.descriptors import NonNegative
 from src.figures.figure import Figure
 
 
 class Circle(Figure):
 
-    radius = PositiveFloat()
+    radius = NonNegative()
 
     def __init__(self, r):
         self.radius = r

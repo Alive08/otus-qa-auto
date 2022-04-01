@@ -1,11 +1,11 @@
-from src.descriptors import PositiveFloat
+from src.descriptors import NonNegative
 from src.figures.figure import Figure
 
 
 class Rectangle(Figure):
 
-    a = PositiveFloat()
-    b = PositiveFloat()
+    a = NonNegative()
+    b = NonNegative()
 
     def __init__(self, a, b):
         self.a = a
