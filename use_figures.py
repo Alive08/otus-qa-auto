@@ -44,6 +44,7 @@ class F(Figure):
     pass
 
 f = F()
+
 # f.area = 12
-print(f.a)
+# print(f.a)
 
