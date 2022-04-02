@@ -7,8 +7,9 @@ class Circle(Figure):
 
     radius = NonNegative()
 
-    def __init__(self, r):
-        self.radius = r
+    def __init__(self, radius):
+        self.radius = radius
+        super().__init__()
 
     @property
     def diameter(self):

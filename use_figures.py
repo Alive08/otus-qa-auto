@@ -10,13 +10,14 @@ from src.figures.triangle import Triangle
 # c.radius = 15
 # print(c.area)
 # print(c.perimeter)
-# # print(c.__dict__)
+# print(c.__dict__)
 
 # s = Square(2)
 # print(s.__dict__)
 # s.a = 4
+# s.b = 5
 # print(s.__dict__)
-# print(s.a)
+# print(s.b)
 # s.a = 8
 # print(s.area)
 # print(s.perimeter)
@@ -31,20 +32,21 @@ from src.figures.triangle import Triangle
 # print(r.perimeter)
 # print(r.__dict__)
 
-t = Triangle(10, 12, 15)
+t = Triangle(10, 12, 19)
 t.c = 17
 print(t.a, t.b, t.c)
 t.a, t.b, t.c = 12, 15, 19
 print(t.a, t.b, t.c)
+
 print(t.area)
 print(t.perimeter)
 print(t.__dict__)
 
-class F(Figure):
-    pass
+# class A:
 
-f = F()
+#     def __init__(self):
+#         self.__p = True
 
-# f.area = 12
-# print(f.a)
+# a = A()
 
+# print(a.__dict__)

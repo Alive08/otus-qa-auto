@@ -10,6 +10,7 @@ class Rectangle(Figure):
     def __init__(self, a, b):
         self.a = a
         self.b = b
+        super().__init__()
 
     @property
     def perimeter(self):

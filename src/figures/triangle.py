@@ -8,31 +8,35 @@ class Triangle(Figure):
     a = NonNegative()
     b = NonNegative()
     c = NonNegative()
+    __initialized = False
 
     @staticmethod
     def check_if_exists(a, b, c):
-        return a > 0 and b > 0 and c > 0 and \
-            a + b > c and a + c > b and b + c > a
-
-    def __new__(cls, a, b, c):
-        if Triangle.check_if_exists(a, b, c):
-            return super().__new__(cls)
+        return all((a + b > c, a + c > b, b + c > a))
 
     def __init__(self, a, b, c):
         self.a = a
         self.b = b
         self.c = c
+        if not Triangle.check_if_exists(a, b, c):
+            raise ValueError(f'Треугольник {a, b, c} не существует')
+        super().__init__()
+        self.__initialized = True
 
     def __setattr__(self, __name, __value):
-        # проверять только при изменении размеров
+        '''
+        ограничение реализации - проверяем при изменении размеров
+        только если объект уже был полностью иницииализирован ранее
+        '''
+        print("__setattr__: ", __name, __value)
         if __name in ('a', 'b', 'c'):
-            # если объект уже был полностью иницииализирован ранее
-            d = self.__dict__.copy()
-            if all(('__a' in d, '__b' in d, '__c' in d)):
+            NonNegative.verify_number(__value)
+            if self.__initialized:
+                d = self.__dict__.copy()
                 d[f"__{__name}"] = __value
-                if not self.check_if_exists(d['__a'], d['__b'], d['__c']):
-                    raise(ValueError('Такой треугольник не существует'))
-
+                if not Triangle.check_if_exists(d['__a'], d['__b'], d['__c']):
+                    raise(ValueError(
+                        f'Треугольник {tuple(d.values())} не существует'))
         return super().__setattr__(__name, __value)
 
     @property
