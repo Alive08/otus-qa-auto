@@ -18,7 +18,7 @@ class Triangle(Figure):
         self.a = a
         self.b = b
         self.c = c
-        if not Triangle.check_if_exists(a, b, c):
+        if not type(self).check_if_exists(a, b, c):
             raise ValueError(f'Треугольник {a, b, c} не существует')
         super().__init__()
         self.__initialized = True
@@ -34,7 +34,7 @@ class Triangle(Figure):
             if self.__initialized:
                 d = self.__dict__.copy()
                 d[f"__{__name}"] = __value
-                if not Triangle.check_if_exists(d['__a'], d['__b'], d['__c']):
+                if not type(self).check_if_exists(d['__a'], d['__b'], d['__c']):
                     raise(ValueError(
                         f'Треугольник {tuple(d.values())} не существует'))
         return super().__setattr__(__name, __value)
