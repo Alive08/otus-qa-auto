@@ -30,7 +30,7 @@ class Triangle(Figure):
         '''
         print("__setattr__: ", __name, __value)
         if __name in ('a', 'b', 'c'):
-            NonNegative.verify_number(__value)
+            NonNegative.verify_this(__value)
             if self.__initialized:
                 d = self.__dict__.copy()
                 d[f"__{__name}"] = __value

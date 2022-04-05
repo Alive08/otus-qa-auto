@@ -1,13 +1,11 @@
-class NonNegative:
+class CommonDescriptor:
     '''
-    Дескриптор для работы с положительными ненулевыми числами
+    Дескриптор с валидацией данных
     '''
 
     @classmethod
-    def verify_number(cls, number):
-        if type(number) not in (int, float) or number <= 0:
-            raise ValueError(
-                "Параметр должен быть положительным числом больше нуля")
+    def verify_this(cls, value):
+        raise NotImplementedError
 
     def __set_name__(self, owner, name):
         self.name = "__" + name
@@ -16,5 +14,47 @@ class NonNegative:
         return instance.__dict__[self.name]
 
     def __set__(self, instance, value):
-        self.verify_number(value)
+        self.verify_this(value)
         instance.__dict__[self.name] = value
+
+
+class NonNegative(CommonDescriptor):
+    '''
+    Дескриптор для работы с положительными ненулевыми числами
+    '''
+
+    @classmethod
+    def verify_this(cls, number):
+        if type(number) not in (int, float) or number <= 0:
+            raise ValueError(
+                "Параметр должен быть положительным числом больше нуля")
+
+
+class StringData(CommonDescriptor):
+
+    @classmethod
+    def verify_this(cls, string):
+        pass
+
+
+class NameData(CommonDescriptor):
+
+    @classmethod
+    def verify_this(cls, string):
+        pass
+
+
+class AgeData(CommonDescriptor):
+
+    @classmethod
+    def verify_this(cls, age):
+        pass
+
+
+class GenderData(CommonDescriptor):
+
+    GENDER = ('male', 'female')
+
+    @classmethod
+    def verify_this(cls, gender):
+        pass
