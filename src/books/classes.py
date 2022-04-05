@@ -1,4 +1,4 @@
-from typing import List
+from typing import Dict, List
 from src.descriptors import GenderData, AgeData, NameData, NonNegative, StringData
 
 
@@ -16,10 +16,17 @@ class Person:
         self.address = address
 
     @classmethod
-    def restore_from_json(cls, json_data):
-        pass
+    def import_from_json(cls, json_data):
+        attrs = ('name',
+                 'gender',
+                 'age',
+                 'address')
+        if not isinstance(json_data, Dict):
+            raise ValueError
+        person = dict(filter(lambda item: item[0] in attrs, json_data.items()))
+        return cls(**person)
 
-    def save_to_json(self, json_data):
+    def export_to_json(self, json_data):
         pass
 
 
@@ -44,7 +51,7 @@ class Book:
 
     def __del__(self):
         type(self).__count -= 1
-    
+
     @classmethod
     def get_count(cls):
         return cls.__count
@@ -55,7 +62,6 @@ class Book:
 
     def save_to_csv(self, json_data):
         pass
-
 
 
 class Reader(Person):
@@ -103,11 +109,3 @@ class Reader(Person):
     def return_all_books(self):
         for b in enumerate(self.books):
             self.return_a_book(b)
-
-    @classmethod
-    def restore_from_json(cls, json_data):
-        
-        pass
-
-    def save_to_json(self):
-        pass
