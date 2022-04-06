@@ -12,8 +12,8 @@ USER_ATTRS= ('name', 'gender', 'age', 'address', 'books')
 
 def gen_csv(file):
     with open(file, newline='', mode='r') as f:
-        for line in DictReader(f):
-            yield line
+        for d in DictReader(f):
+            yield {k.lower():v for k,v in d.items()}
 
 
 def gen_json(file):
