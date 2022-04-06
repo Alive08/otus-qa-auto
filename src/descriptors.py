@@ -28,33 +28,3 @@ class NonNegative(CommonDescriptor):
         if type(number) not in (int, float) or number <= 0:
             raise ValueError(
                 "Параметр должен быть положительным числом больше нуля")
-
-
-class StringData(CommonDescriptor):
-
-    @classmethod
-    def verify_this(cls, string):
-        pass
-
-
-class NameData(CommonDescriptor):
-
-    @classmethod
-    def verify_this(cls, string):
-        pass
-
-
-class AgeData(CommonDescriptor):
-
-    @classmethod
-    def verify_this(cls, age):
-        pass
-
-
-class GenderData(CommonDescriptor):
-
-    GENDER = ('male', 'female')
-
-    @classmethod
-    def verify_this(cls, gender):
-        pass

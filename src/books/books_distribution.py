@@ -6,7 +6,7 @@ import json
 
 books_file = "src/books/data/books.csv"
 users_file = "src/books/data/users.json"
-result_file = "src/books/data/result.json"
+result_file = "src/books/result.json"
 
 USER_FIELDS = ('name', 'gender', 'age', 'address', 'books', 'books_count')
 
@@ -44,7 +44,7 @@ if __name__ == '__main__':
         total_books += 1
     del i
 
-    with open(result_file, mode='r') as f:
+    with open(result_file, mode='w') as f:
         try:
             json.dump(users, f, indent=4)
         except Exception as e:
