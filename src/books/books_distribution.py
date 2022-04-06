@@ -1,5 +1,4 @@
 from csv import DictReader
-from functools import reduce
 import json
 
 
