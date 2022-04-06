@@ -1,4 +1,5 @@
 from csv import DictReader
+from functools import reduce
 import json
 
 
@@ -6,7 +7,7 @@ books_file = "src/books/data/books.csv"
 users_file = "src/books/data/users.json"
 result_file = "src/books/result.json"
 
-USER_FIELDS = ('name', 'gender', 'age', 'address', 'books', 'books_count')
+USER_ATTRS= ('name', 'gender', 'age', 'address', 'books')
 
 
 def gen_csv(file):
@@ -14,16 +15,12 @@ def gen_csv(file):
         for line in DictReader(f):
             yield line
 
-# более короткая, но менее безопасная форма генератора книг
-# books = (row for row in DictReader(open(books_file, newline='', mode='r')))
-
 
 def gen_json(file):
     with open(file, mode='r') as f:
         for entry in json.load(f):
             entry['books'] = []
-            entry['books_count'] = 0
-            yield dict(filter(lambda i: i[0] in USER_FIELDS, entry.items()))
+            yield dict(filter(lambda i: i[0] in USER_ATTRS, entry.items()))
 
 
 if __name__ == '__main__':
@@ -33,13 +30,12 @@ if __name__ == '__main__':
     users = list(gen_json(users_file))
     for b in gen_csv(books_file):
         try:
-            users[i]
+            t = users[i]
         except IndexError:
             i = 0
         users[i]['books'].append(b)
-        users[i]['books_count'] += 1
-        i += 1
         total_books += 1
+        i += 1
     del i
 
     with open(result_file, mode='w') as f:
@@ -49,4 +45,4 @@ if __name__ == '__main__':
             print(e)
         else:
             print(
-                f"Готово: распределено {total_books} книг между {len(users)} пользователями")
+                f"Распределено {total_books} книг между {len(users)} читателями")
