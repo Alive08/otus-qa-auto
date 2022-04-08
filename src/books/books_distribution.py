@@ -6,22 +6,21 @@ books_file = "src/books/data/books.csv"
 users_file = "src/books/data/users.json"
 result_file = "src/books/result.json"
 
-USER_ATTRS= ('name', 'gender', 'address', 'age', 'books')
-BOOK_ATTRS= ('title', 'author', 'pages', 'genre')
+USER_ATTRS = ('name', 'gender', 'address', 'age', 'books')
+BOOK_ATTRS = ('title', 'author', 'pages', 'genre')
 
 
 def gen_csv(file):
     with open(file, newline='', mode='r') as f:
         for d in DictReader(f):
-           yield {k.lower():v for k, v in d.items() if k.lower() in BOOK_ATTRS}
+            yield {k.lower(): v for k, v in d.items() if k.lower() in BOOK_ATTRS}
 
 
 def gen_json(file):
     with open(file, mode='r') as f:
         for entry in json.load(f):
             entry['books'] = []
-            yield {k:v for k, v in entry.items() if k in USER_ATTRS}
-            # yield dict(filter(lambda i: i[0] in USER_ATTRS, entry.items()))
+            yield {k: v for k, v in entry.items() if k in USER_ATTRS}
 
 
 if __name__ == '__main__':

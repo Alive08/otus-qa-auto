@@ -31,7 +31,16 @@ def test_user_entry_struture(reference_entry, readers_data):
     for user in readers_data:
         assert isinstance(user, dict)
         assert user.keys() == reference_entry.keys()
-        assert isinstance(user['books'], list)
+
+        for k, v in user.items():
+            assert type(v) == type(reference_entry[k])
+
         for book in user['books']:
             assert isinstance(book, dict)
+            reference_book = reference_entry['books'][0]
+
+            for k, v in book.items():
+                print(v, type(v), '---', reference_book[k], type(reference_book[k]))
+            #     assert type(v) == type(reference_book[k])
+
             assert book.keys() == reference_entry['books'][0].keys()
