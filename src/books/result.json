@@ -9,49 +9,81 @@
                 "title": "Fundamentals of Wavelets",
                 "author": "Goswami, Jaideva",
                 "genre": "signal_processing",
+<<<<<<< HEAD
                 "pages": "228"
+=======
+                "pages": 228
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Complete Sherlock Holmes, The - Vol I",
                 "author": "Doyle, Arthur Conan",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "176"
+=======
+                "pages": 176
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Textbook of Economic Theory",
                 "author": "Stonier, Alfred",
                 "genre": "economics",
+<<<<<<< HEAD
                 "pages": "242"
+=======
+                "pages": 242
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Great Indian Novel, The",
                 "author": "Tharoor, Shashi",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "198"
+=======
+                "pages": 198
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "History of Western Philosophy",
                 "author": "Russell, Bertrand",
                 "genre": "philosophy",
+<<<<<<< HEAD
                 "pages": "213"
+=======
+                "pages": 213
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Flashpoint",
                 "author": "",
                 "genre": "comic",
+<<<<<<< HEAD
                 "pages": "265"
+=======
+                "pages": 265
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "20000 Leagues Under the Sea",
                 "author": "Verne, Jules",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "190"
+=======
+                "pages": 190
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Judge, The",
                 "author": "",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "170"
+=======
+                "pages": 170
+>>>>>>> refs/remotes/origin/books_distribution
             }
         ]
     },
@@ -65,49 +97,81 @@
                 "title": "Data Smart",
                 "author": "Foreman, John",
                 "genre": "data_science",
+<<<<<<< HEAD
                 "pages": "235"
+=======
+                "pages": 235
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Complete Sherlock Holmes, The - Vol II",
                 "author": "Doyle, Arthur Conan",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "176"
+=======
+                "pages": 176
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Econometric Analysis",
                 "author": "Greene, W. H.",
                 "genre": "economics",
+<<<<<<< HEAD
                 "pages": "242"
+=======
+                "pages": 242
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "O Jerusalem!",
                 "author": "Lapierre, Dominique",
                 "genre": "history",
+<<<<<<< HEAD
                 "pages": "217"
+=======
+                "pages": 217
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Selected Short Stories",
                 "author": "",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "215"
+=======
+                "pages": 215
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Batman Earth One",
                 "author": "",
                 "genre": "comic",
+<<<<<<< HEAD
                 "pages": "265"
+=======
+                "pages": 265
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Batatyachi Chal",
                 "author": "Deshpande P L",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "200"
+=======
+                "pages": 200
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Attorney, The",
                 "author": "",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "170"
+=======
+                "pages": 170
+>>>>>>> refs/remotes/origin/books_distribution
             }
         ]
     },
@@ -121,49 +185,81 @@
                 "title": "God Created the Integers",
                 "author": "Hawking, Stephen",
                 "genre": "mathematics",
+<<<<<<< HEAD
                 "pages": "197"
+=======
+                "pages": 197
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Wealth of Nations, The",
                 "author": "Smith, Adam",
                 "genre": "economics",
+<<<<<<< HEAD
                 "pages": "175"
+=======
+                "pages": 175
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Learning OpenCV",
                 "author": "Bradsky, Gary",
                 "genre": "data_science",
+<<<<<<< HEAD
                 "pages": "232"
+=======
+                "pages": 232
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "City of Joy, The",
                 "author": "Lapierre, Dominique",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "177"
+=======
+                "pages": 177
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Rationality & Freedom",
                 "author": "Sen, Amartya",
                 "genre": "economics",
+<<<<<<< HEAD
                 "pages": "213"
+=======
+                "pages": 213
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Crisis on Infinite Earths",
                 "author": "",
                 "genre": "comic",
+<<<<<<< HEAD
                 "pages": "258"
+=======
+                "pages": 258
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Hafasavnuk",
                 "author": "Deshpande P L",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "211"
+=======
+                "pages": 211
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Prince, The",
                 "author": "Machiavelli",
                 "genre": "philosophy",
+<<<<<<< HEAD
                 "pages": "173"
+=======
+                "pages": 173
+>>>>>>> refs/remotes/origin/books_distribution
             }
         ]
     },
@@ -177,49 +273,81 @@
                 "title": "Superfreakonomics",
                 "author": "Dubner, Stephen",
                 "genre": "economics",
+<<<<<<< HEAD
                 "pages": "179"
+=======
+                "pages": 179
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Pillars of the Earth, The",
                 "author": "Follett, Ken",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "176"
+=======
+                "pages": 176
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Data Structures Using C & C++",
                 "author": "Tanenbaum, Andrew",
                 "genre": "computer_science",
+<<<<<<< HEAD
                 "pages": "235"
+=======
+                "pages": 235
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Freedom at Midnight",
                 "author": "Lapierre, Dominique",
                 "genre": "history",
+<<<<<<< HEAD
                 "pages": "167"
+=======
+                "pages": 167
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Clash of Civilizations and Remaking of the World Order",
                 "author": "Huntington, Samuel",
                 "genre": "history",
+<<<<<<< HEAD
                 "pages": "228"
+=======
+                "pages": 228
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Numbers Behind Numb3rs, The",
                 "author": "Devlin, Keith",
                 "genre": "science",
+<<<<<<< HEAD
                 "pages": "202"
+=======
+                "pages": 202
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Urlasurla",
                 "author": "Deshpande P L",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "211"
+=======
+                "pages": 211
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Eyeless in Gaza",
                 "author": "Huxley, Aldous",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "180"
+=======
+                "pages": 180
+>>>>>>> refs/remotes/origin/books_distribution
             }
         ]
     },
@@ -233,49 +361,81 @@
                 "title": "Orientalism",
                 "author": "Said, Edward",
                 "genre": "history",
+<<<<<<< HEAD
                 "pages": "197"
+=======
+                "pages": 197
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Mein Kampf",
                 "author": "Hitler, Adolf",
                 "genre": "nonfiction",
+<<<<<<< HEAD
                 "pages": "212"
+=======
+                "pages": 212
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Computer Vision, A Modern Approach",
                 "author": "Forsyth, David",
                 "genre": "data_science",
+<<<<<<< HEAD
                 "pages": "255"
+=======
+                "pages": 255
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Winter of Our Discontent, The",
                 "author": "Steinbeck, John",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "196"
+=======
+                "pages": 196
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Uncommon Wisdom",
                 "author": "Capra, Fritjof",
                 "genre": "nonfiction",
+<<<<<<< HEAD
                 "pages": "197"
+=======
+                "pages": 197
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Superman Earth One - 1",
                 "author": "",
                 "genre": "comic",
+<<<<<<< HEAD
                 "pages": "259"
+=======
+                "pages": 259
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Pointers in C",
                 "author": "Kanetkar, Yashwant",
                 "genre": "computer_science",
+<<<<<<< HEAD
                 "pages": "213"
+=======
+                "pages": 213
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Tales of Beedle the Bard",
                 "author": "Rowling, J K",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "184"
+=======
+                "pages": 184
+>>>>>>> refs/remotes/origin/books_distribution
             }
         ]
     },
@@ -289,49 +449,81 @@
                 "title": "Nature of Statistical Learning Theory, The",
                 "author": "Vapnik, Vladimir",
                 "genre": "data_science",
+<<<<<<< HEAD
                 "pages": "230"
+=======
+                "pages": 230
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Tao of Physics, The",
                 "author": "Capra, Fritjof",
                 "genre": "science",
+<<<<<<< HEAD
                 "pages": "179"
+=======
+                "pages": 179
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Principles of Communication Systems",
                 "author": "Taub, Schilling",
                 "genre": "computer_science",
+<<<<<<< HEAD
                 "pages": "240"
+=======
+                "pages": 240
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "On Education",
                 "author": "Russell, Bertrand",
                 "genre": "philosophy",
+<<<<<<< HEAD
                 "pages": "203"
+=======
+                "pages": 203
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "One",
                 "author": "Bach, Richard",
                 "genre": "nonfiction",
+<<<<<<< HEAD
                 "pages": "172"
+=======
+                "pages": 172
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Superman Earth One - 2",
                 "author": "",
                 "genre": "comic",
+<<<<<<< HEAD
                 "pages": "258"
+=======
+                "pages": 258
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Cathedral and the Bazaar, The",
                 "author": "Raymond, Eric",
                 "genre": "computer_science",
+<<<<<<< HEAD
                 "pages": "217"
+=======
+                "pages": 217
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Girl with the Dragon Tattoo",
                 "author": "Larsson, Steig",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "179"
+=======
+                "pages": 179
+>>>>>>> refs/remotes/origin/books_distribution
             }
         ]
     },
@@ -345,49 +537,81 @@
                 "title": "Integration of the Indian States",
                 "author": "Menon, V P",
                 "genre": "history",
+<<<<<<< HEAD
                 "pages": "217"
+=======
+                "pages": 217
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Surely You're Joking Mr Feynman",
                 "author": "Feynman, Richard",
                 "genre": "science",
+<<<<<<< HEAD
                 "pages": "198"
+=======
+                "pages": 198
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Let Us C",
                 "author": "Kanetkar, Yashwant",
                 "genre": "computer_science",
+<<<<<<< HEAD
                 "pages": "213"
+=======
+                "pages": 213
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Free Will",
                 "author": "Harris, Sam",
                 "genre": "philosophy",
+<<<<<<< HEAD
                 "pages": "203"
+=======
+                "pages": 203
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Karl Marx Biography",
                 "author": "",
                 "genre": "nonfiction",
+<<<<<<< HEAD
                 "pages": "162"
+=======
+                "pages": 162
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Justice League: Throne of Atlantis",
                 "author": "",
                 "genre": "comic",
+<<<<<<< HEAD
                 "pages": "258"
+=======
+                "pages": 258
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Design with OpAmps",
                 "author": "Franco, Sergio",
                 "genre": "computer_science",
+<<<<<<< HEAD
                 "pages": "240"
+=======
+                "pages": 240
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Girl who kicked the Hornet's Nest",
                 "author": "Larsson, Steig",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "179"
+=======
+                "pages": 179
+>>>>>>> refs/remotes/origin/books_distribution
             }
         ]
     },
@@ -401,49 +625,81 @@
                 "title": "Drunkard's Walk, The",
                 "author": "Mlodinow, Leonard",
                 "genre": "science",
+<<<<<<< HEAD
                 "pages": "197"
+=======
+                "pages": 197
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Farewell to Arms, A",
                 "author": "Hemingway, Ernest",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "179"
+=======
+                "pages": 179
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Amulet of Samarkand, The",
                 "author": "Stroud, Jonathan",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "179"
+=======
+                "pages": 179
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Bookless in Baghdad",
                 "author": "Tharoor, Shashi",
                 "genre": "nonfiction",
+<<<<<<< HEAD
                 "pages": "206"
+=======
+                "pages": 206
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "To Sir With Love",
                 "author": "Braithwaite",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "197"
+=======
+                "pages": 197
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Justice League: The Villain's Journey",
                 "author": "",
                 "genre": "comic",
+<<<<<<< HEAD
                 "pages": "258"
+=======
+                "pages": 258
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Think Complexity",
                 "author": "Downey, Allen",
                 "genre": "data_science",
+<<<<<<< HEAD
                 "pages": "230"
+=======
+                "pages": 230
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Girl who played with Fire",
                 "author": "Larsson, Steig",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "179"
+=======
+                "pages": 179
+>>>>>>> refs/remotes/origin/books_distribution
             }
         ]
     },
@@ -457,49 +713,81 @@
                 "title": "Image Processing & Mathematical Morphology",
                 "author": "Shih, Frank",
                 "genre": "signal_processing",
+<<<<<<< HEAD
                 "pages": "241"
+=======
+                "pages": 241
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Veteran, The",
                 "author": "Forsyth, Frederick",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "177"
+=======
+                "pages": 177
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Crime and Punishment",
                 "author": "Dostoevsky, Fyodor",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "180"
+=======
+                "pages": 180
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Case of the Lame Canary, The",
                 "author": "Gardner, Earle Stanley",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "179"
+=======
+                "pages": 179
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Half A Life",
                 "author": "Naipaul, V S",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "196"
+=======
+                "pages": 196
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Death of Superman, The",
                 "author": "",
                 "genre": "comic",
+<<<<<<< HEAD
                 "pages": "258"
+=======
+                "pages": 258
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Devil's Advocate, The",
                 "author": "West, Morris",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "178"
+=======
+                "pages": 178
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Batman Handbook",
                 "author": "",
                 "genre": "comic",
+<<<<<<< HEAD
                 "pages": "270"
+=======
+                "pages": 270
+>>>>>>> refs/remotes/origin/books_distribution
             }
         ]
     },
@@ -513,49 +801,81 @@
                 "title": "How to Think Like Sherlock Holmes",
                 "author": "Konnikova, Maria",
                 "genre": "psychology",
+<<<<<<< HEAD
                 "pages": "240"
+=======
+                "pages": 240
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "False Impressions",
                 "author": "Archer, Jeffery",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "177"
+=======
+                "pages": 177
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Angels & Demons",
                 "author": "Brown, Dan",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "178"
+=======
+                "pages": 178
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Theory of Everything, The",
                 "author": "Hawking, Stephen",
                 "genre": "science",
+<<<<<<< HEAD
                 "pages": "217"
+=======
+                "pages": 217
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Discovery of India, The",
                 "author": "Nehru, Jawaharlal",
                 "genre": "history",
+<<<<<<< HEAD
                 "pages": "230"
+=======
+                "pages": 230
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "History of the DC Universe",
                 "author": "",
                 "genre": "comic",
+<<<<<<< HEAD
                 "pages": "258"
+=======
+                "pages": 258
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Ayn Rand Answers",
                 "author": "Rand, Ayn",
                 "genre": "philosophy",
+<<<<<<< HEAD
                 "pages": "203"
+=======
+                "pages": 203
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Murphy's Law",
                 "author": "",
                 "genre": "nonfiction",
+<<<<<<< HEAD
                 "pages": "178"
+=======
+                "pages": 178
+>>>>>>> refs/remotes/origin/books_distribution
             }
         ]
     },
@@ -569,49 +889,81 @@
                 "title": "Data Scientists at Work",
                 "author": "Sebastian Gutierrez",
                 "genre": "data_science",
+<<<<<<< HEAD
                 "pages": "230"
+=======
+                "pages": 230
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Last Lecture, The",
                 "author": "Pausch, Randy",
                 "genre": "nonfiction",
+<<<<<<< HEAD
                 "pages": "197"
+=======
+                "pages": 197
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Argumentative Indian, The",
                 "author": "Sen, Amartya",
                 "genre": "nonfiction",
+<<<<<<< HEAD
                 "pages": "209"
+=======
+                "pages": 209
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "New Markets & Other Essays",
                 "author": "Drucker, Peter",
                 "genre": "economics",
+<<<<<<< HEAD
                 "pages": "176"
+=======
+                "pages": 176
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Apulki",
                 "author": "Deshpande, P L",
                 "genre": "nonfiction",
+<<<<<<< HEAD
                 "pages": "211"
+=======
+                "pages": 211
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Batman: The Long Halloween",
                 "author": "",
                 "genre": "comic",
+<<<<<<< HEAD
                 "pages": "258"
+=======
+                "pages": 258
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Philosophy: Who Needs It",
                 "author": "Rand, Ayn",
                 "genre": "philosophy",
+<<<<<<< HEAD
                 "pages": "171"
+=======
+                "pages": 171
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Structure and Randomness",
                 "author": "Tao, Terence",
                 "genre": "mathematics",
+<<<<<<< HEAD
                 "pages": "252"
+=======
+                "pages": 252
+>>>>>>> refs/remotes/origin/books_distribution
             }
         ]
     },
@@ -625,49 +977,81 @@
                 "title": "Slaughterhouse Five",
                 "author": "Vonnegut, Kurt",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "198"
+=======
+                "pages": 198
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Return of the Primitive",
                 "author": "Rand, Ayn",
                 "genre": "philosophy",
+<<<<<<< HEAD
                 "pages": "202"
+=======
+                "pages": 202
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Sea of Poppies",
                 "author": "Ghosh, Amitav",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "197"
+=======
+                "pages": 197
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Electric Universe",
                 "author": "Bodanis, David",
                 "genre": "science",
+<<<<<<< HEAD
                 "pages": "201"
+=======
+                "pages": 201
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Unpopular Essays",
                 "author": "Russell, Bertrand",
                 "genre": "philosophy",
+<<<<<<< HEAD
                 "pages": "198"
+=======
+                "pages": 198
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Life in Letters, A",
                 "author": "Steinbeck, John",
                 "genre": "nonfiction",
+<<<<<<< HEAD
                 "pages": "196"
+=======
+                "pages": 196
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "World's Great Thinkers, The",
                 "author": "",
                 "genre": "philosophy",
+<<<<<<< HEAD
                 "pages": "189"
+=======
+                "pages": 189
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Image Processing with MATLAB",
                 "author": "Eddins, Steve",
                 "genre": "signal_processing",
+<<<<<<< HEAD
                 "pages": "241"
+=======
+                "pages": 241
+>>>>>>> refs/remotes/origin/books_distribution
             }
         ]
     },
@@ -681,49 +1065,81 @@
                 "title": "Birth of a Theorem",
                 "author": "Villani, Cedric",
                 "genre": "mathematics",
+<<<<<<< HEAD
                 "pages": "234"
+=======
+                "pages": 234
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Jurassic Park",
                 "author": "Crichton, Michael",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "174"
+=======
+                "pages": 174
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Idea of Justice, The",
                 "author": "Sen, Amartya",
                 "genre": "nonfiction",
+<<<<<<< HEAD
                 "pages": "212"
+=======
+                "pages": 212
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Hunchback of Notre Dame, The",
                 "author": "Hugo, Victor",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "175"
+=======
+                "pages": 175
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Deceiver, The",
                 "author": "Forsyth, Frederick",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "178"
+=======
+                "pages": 178
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Information, The",
                 "author": "Gleick, James",
                 "genre": "science",
+<<<<<<< HEAD
                 "pages": "233"
+=======
+                "pages": 233
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Data Analysis with Open Source Tools",
                 "author": "Janert, Phillip",
                 "genre": "data_science",
+<<<<<<< HEAD
                 "pages": "230"
+=======
+                "pages": 230
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Animal Farm",
                 "author": "Orwell, George",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "180"
+=======
+                "pages": 180
+>>>>>>> refs/remotes/origin/books_distribution
             }
         ]
     },
@@ -737,49 +1153,81 @@
                 "title": "Structure & Interpretation of Computer Programs",
                 "author": "Sussman, Gerald",
                 "genre": "computer_science",
+<<<<<<< HEAD
                 "pages": "240"
+=======
+                "pages": 240
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Russian Journal, A",
                 "author": "Steinbeck, John",
                 "genre": "nonfiction",
+<<<<<<< HEAD
                 "pages": "196"
+=======
+                "pages": 196
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Raisin in the Sun, A",
                 "author": "Hansberry, Lorraine",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "175"
+=======
+                "pages": 175
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Burning Bright",
                 "author": "Steinbeck, John",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "175"
+=======
+                "pages": 175
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Veil: Secret Wars of the CIA",
                 "author": "Woodward, Bob",
                 "genre": "history",
+<<<<<<< HEAD
                 "pages": "171"
+=======
+                "pages": 171
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Journal of Economics, vol 106 No 3",
                 "author": "",
                 "genre": "economics",
+<<<<<<< HEAD
                 "pages": "235"
+=======
+                "pages": 235
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Broca's Brain",
                 "author": "Sagan, Carl",
                 "genre": "science",
+<<<<<<< HEAD
                 "pages": "174"
+=======
+                "pages": 174
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Idiot, The",
                 "author": "Dostoevsky, Fyodor",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "197"
+=======
+                "pages": 197
+>>>>>>> refs/remotes/origin/books_distribution
             }
         ]
     },
@@ -793,49 +1241,81 @@
                 "title": "Age of Wrath, The",
                 "author": "Eraly, Abraham",
                 "genre": "history",
+<<<<<<< HEAD
                 "pages": "238"
+=======
+                "pages": 238
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Tales of Mystery and Imagination",
                 "author": "Poe, Edgar Allen",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "172"
+=======
+                "pages": 172
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "All the President's Men",
                 "author": "Woodward, Bob",
                 "genre": "history",
+<<<<<<< HEAD
                 "pages": "177"
+=======
+                "pages": 177
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Age of Discontuinity, The",
                 "author": "Drucker, Peter",
                 "genre": "economics",
+<<<<<<< HEAD
                 "pages": "178"
+=======
+                "pages": 178
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Char Shabda",
                 "author": "Deshpande, P L",
                 "genre": "nonfiction",
+<<<<<<< HEAD
                 "pages": "214"
+=======
+                "pages": 214
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Elements of Information Theory",
                 "author": "Thomas, Joy",
                 "genre": "data_science",
+<<<<<<< HEAD
                 "pages": "229"
+=======
+                "pages": 229
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Men of Mathematics",
                 "author": "Bell, E T",
                 "genre": "mathematics",
+<<<<<<< HEAD
                 "pages": "217"
+=======
+                "pages": 217
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Christmas Carol, A",
                 "author": "Dickens, Charles",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "196"
+=======
+                "pages": 196
+>>>>>>> refs/remotes/origin/books_distribution
             }
         ]
     },
@@ -849,43 +1329,71 @@
                 "title": "Trial, The",
                 "author": "Kafka, Frank",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "198"
+=======
+                "pages": 198
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Freakonomics",
                 "author": "Dubner, Stephen",
                 "genre": "economics",
+<<<<<<< HEAD
                 "pages": "197"
+=======
+                "pages": 197
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Prisoner of Birth, A",
                 "author": "Archer, Jeffery",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "176"
+=======
+                "pages": 176
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Doctor in the Nude",
                 "author": "Gordon, Richard",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "179"
+=======
+                "pages": 179
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Rosy is My Relative",
                 "author": "Durrell, Gerald",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "176"
+=======
+                "pages": 176
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Power Electronics - Rashid",
                 "author": "Rashid, Muhammad",
                 "genre": "computer_science",
+<<<<<<< HEAD
                 "pages": "235"
+=======
+                "pages": 235
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Oxford book of Modern Science Writing",
                 "author": "Dawkins, Richard",
                 "genre": "science",
+<<<<<<< HEAD
                 "pages": "240"
+=======
+                "pages": 240
+>>>>>>> refs/remotes/origin/books_distribution
             }
         ]
     },
@@ -899,43 +1407,71 @@
                 "title": "Statistical Decision Theory'",
                 "author": "Pratt, John",
                 "genre": "data_science",
+<<<<<<< HEAD
                 "pages": "236"
+=======
+                "pages": 236
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Hidden Connections, The",
                 "author": "Capra, Fritjof",
                 "genre": "science",
+<<<<<<< HEAD
                 "pages": "197"
+=======
+                "pages": 197
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Scoop!",
                 "author": "Nayar, Kuldip",
                 "genre": "history",
+<<<<<<< HEAD
                 "pages": "216"
+=======
+                "pages": 216
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Down and Out in Paris & London",
                 "author": "Orwell, George",
                 "genre": "nonfiction",
+<<<<<<< HEAD
                 "pages": "179"
+=======
+                "pages": 179
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Moon and Sixpence, The",
                 "author": "Maugham, William S",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "180"
+=======
+                "pages": 180
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Power Electronics - Mohan",
                 "author": "Mohan, Ned",
                 "genre": "computer_science",
+<<<<<<< HEAD
                 "pages": "237"
+=======
+                "pages": 237
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Justice, Judiciary and Democracy",
                 "author": "Ranjan, Sudhanshu",
                 "genre": "philosophy",
+<<<<<<< HEAD
                 "pages": "224"
+=======
+                "pages": 224
+>>>>>>> refs/remotes/origin/books_distribution
             }
         ]
     },
@@ -949,43 +1485,71 @@
                 "title": "Data Mining Handbook",
                 "author": "Nisbet, Robert",
                 "genre": "data_science",
+<<<<<<< HEAD
                 "pages": "242"
+=======
+                "pages": 242
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Story of Philosophy, The",
                 "author": "Durant, Will",
                 "genre": "philosophy",
+<<<<<<< HEAD
                 "pages": "170"
+=======
+                "pages": 170
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Ahe Manohar Tari",
                 "author": "Deshpande, Sunita",
                 "genre": "nonfiction",
+<<<<<<< HEAD
                 "pages": "213"
+=======
+                "pages": 213
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Identity & Violence",
                 "author": "Sen, Amartya",
                 "genre": "philosophy",
+<<<<<<< HEAD
                 "pages": "219"
+=======
+                "pages": 219
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Political Philosophers",
                 "author": "",
                 "genre": "philosophy",
+<<<<<<< HEAD
                 "pages": "162"
+=======
+                "pages": 162
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Neural Networks",
                 "author": "Haykin, Simon",
                 "genre": "data_science",
+<<<<<<< HEAD
                 "pages": "240"
+=======
+                "pages": 240
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Arthashastra, The",
                 "author": "Kautiyla",
                 "genre": "philosophy",
+<<<<<<< HEAD
                 "pages": "214"
+=======
+                "pages": 214
+>>>>>>> refs/remotes/origin/books_distribution
             }
         ]
     },
@@ -999,43 +1563,71 @@
                 "title": "New Machiavelli, The",
                 "author": "Wells, H. G.",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "180"
+=======
+                "pages": 180
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Asami Asami",
                 "author": "Deshpande, P L",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "205"
+=======
+                "pages": 205
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Last Mughal, The",
                 "author": "Dalrymple, William",
                 "genre": "history",
+<<<<<<< HEAD
                 "pages": "199"
+=======
+                "pages": 199
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Beyond the Three Seas",
                 "author": "Dalrymple, William",
                 "genre": "history",
+<<<<<<< HEAD
                 "pages": "197"
+=======
+                "pages": 197
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Short History of the World, A",
                 "author": "Wells, H G",
                 "genre": "history",
+<<<<<<< HEAD
                 "pages": "197"
+=======
+                "pages": 197
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Grapes of Wrath, The",
                 "author": "Steinbeck, John",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "196"
+=======
+                "pages": 196
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "We the People",
                 "author": "Palkhivala",
                 "genre": "philosophy",
+<<<<<<< HEAD
                 "pages": "216"
+=======
+                "pages": 216
+>>>>>>> refs/remotes/origin/books_distribution
             }
         ]
     },
@@ -1049,43 +1641,71 @@
                 "title": "Physics & Philosophy",
                 "author": "Heisenberg, Werner",
                 "genre": "science",
+<<<<<<< HEAD
                 "pages": "197"
+=======
+                "pages": 197
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Journal of a Novel",
                 "author": "Steinbeck, John",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "196"
+=======
+                "pages": 196
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Social Choice & Welfare, Vol 39 No. 1",
                 "author": "Various",
                 "genre": "economics",
+<<<<<<< HEAD
                 "pages": "235"
+=======
+                "pages": 235
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "World's Greatest Short Stories, The",
                 "author": "",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "217"
+=======
+                "pages": 217
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Trembling of a Leaf, The",
                 "author": "Maugham, William S",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "205"
+=======
+                "pages": 205
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Vyakti ani Valli",
                 "author": "Deshpande, P L",
                 "genre": "nonfiction",
+<<<<<<< HEAD
                 "pages": "211"
+=======
+                "pages": 211
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "We the Nation",
                 "author": "Palkhivala",
                 "genre": "philosophy",
+<<<<<<< HEAD
                 "pages": "216"
+=======
+                "pages": 216
+>>>>>>> refs/remotes/origin/books_distribution
             }
         ]
     },
@@ -1099,43 +1719,71 @@
                 "title": "Making Software",
                 "author": "Oram, Andy",
                 "genre": "computer_science",
+<<<<<<< HEAD
                 "pages": "232"
+=======
+                "pages": 232
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Once There Was a War",
                 "author": "Steinbeck, John",
                 "genre": "nonfiction",
+<<<<<<< HEAD
                 "pages": "196"
+=======
+                "pages": 196
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Radiowaril Bhashane & Shrutika",
                 "author": "Deshpande, P L",
                 "genre": "nonfiction",
+<<<<<<< HEAD
                 "pages": "213"
+=======
+                "pages": 213
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Talking Straight",
                 "author": "Iacoca, Lee",
                 "genre": "nonfiction",
+<<<<<<< HEAD
                 "pages": "175"
+=======
+                "pages": 175
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Doctor on the Brain",
                 "author": "Gordon, Richard",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "204"
+=======
+                "pages": 204
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Statistical Learning Theory",
                 "author": "Vapnik, Vladimir",
                 "genre": "data_science",
+<<<<<<< HEAD
                 "pages": "228"
+=======
+                "pages": 228
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Courtroom Genius, The",
                 "author": "Sorabjee",
                 "genre": "nonfiction",
+<<<<<<< HEAD
                 "pages": "217"
+=======
+                "pages": 217
+>>>>>>> refs/remotes/origin/books_distribution
             }
         ]
     },
@@ -1149,43 +1797,71 @@
                 "title": "Analysis, Vol I",
                 "author": "Tao, Terence",
                 "genre": "mathematics",
+<<<<<<< HEAD
                 "pages": "248"
+=======
+                "pages": 248
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Moon is Down, The",
                 "author": "Steinbeck, John",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "196"
+=======
+                "pages": 196
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Gun Gayin Awadi",
                 "author": "Deshpande, P L",
                 "genre": "nonfiction",
+<<<<<<< HEAD
                 "pages": "212"
+=======
+                "pages": 212
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Maugham's Collected Short Stories, Vol 3",
                 "author": "Maugham, William S",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "171"
+=======
+                "pages": 171
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Simpsons & Their Mathematical Secrets",
                 "author": "Singh, Simon",
                 "genre": "science",
+<<<<<<< HEAD
                 "pages": "233"
+=======
+                "pages": 233
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Empire of the Mughal - The Tainted Throne",
                 "author": "Rutherford, Alex",
                 "genre": "history",
+<<<<<<< HEAD
                 "pages": "180"
+=======
+                "pages": 180
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Dongri to Dubai",
                 "author": "Zaidi, Hussain",
                 "genre": "nonfiction",
+<<<<<<< HEAD
                 "pages": "216"
+=======
+                "pages": 216
+>>>>>>> refs/remotes/origin/books_distribution
             }
         ]
     },
@@ -1199,43 +1875,71 @@
                 "title": "Machine Learning for Hackers",
                 "author": "Conway, Drew",
                 "genre": "data_science",
+<<<<<<< HEAD
                 "pages": "233"
+=======
+                "pages": 233
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Brethren, The",
                 "author": "Grisham, John",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "174"
+=======
+                "pages": 174
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Aghal Paghal",
                 "author": "Deshpande, P L",
                 "genre": "nonfiction",
+<<<<<<< HEAD
                 "pages": "212"
+=======
+                "pages": 212
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Phantom of Manhattan, The",
                 "author": "Forsyth, Frederick",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "180"
+=======
+                "pages": 180
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Pattern Classification",
                 "author": "Duda, Hart",
                 "genre": "data_science",
+<<<<<<< HEAD
                 "pages": "241"
+=======
+                "pages": 241
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Empire of the Mughal - Brothers at War",
                 "author": "Rutherford, Alex",
                 "genre": "history",
+<<<<<<< HEAD
                 "pages": "180"
+=======
+                "pages": 180
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "History of England, Foundation",
                 "author": "Ackroyd, Peter",
                 "genre": "history",
+<<<<<<< HEAD
                 "pages": "197"
+=======
+                "pages": 197
+>>>>>>> refs/remotes/origin/books_distribution
             }
         ]
     },
@@ -1249,43 +1953,71 @@
                 "title": "Signal and the Noise, The",
                 "author": "Silver, Nate",
                 "genre": "data_science",
+<<<<<<< HEAD
                 "pages": "233"
+=======
+                "pages": 233
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "In a Free State",
                 "author": "Naipaul, V. S.",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "196"
+=======
+                "pages": 196
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Maqta-e-Ghalib",
                 "author": "Garg, Sanjay",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "221"
+=======
+                "pages": 221
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Ashenden of The British Agent",
                 "author": "Maugham, William S",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "160"
+=======
+                "pages": 160
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "From Beirut to Jerusalem",
                 "author": "Friedman, Thomas",
                 "genre": "history",
+<<<<<<< HEAD
                 "pages": "202"
+=======
+                "pages": 202
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Empire of the Mughal - Ruler of the World",
                 "author": "Rutherford, Alex",
                 "genre": "history",
+<<<<<<< HEAD
                 "pages": "180"
+=======
+                "pages": 180
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "City of Djinns",
                 "author": "Dalrymple, William",
                 "genre": "history",
+<<<<<<< HEAD
                 "pages": "198"
+=======
+                "pages": 198
+>>>>>>> refs/remotes/origin/books_distribution
             }
         ]
     },
@@ -1299,43 +2031,71 @@
                 "title": "Python for Data Analysis",
                 "author": "McKinney, Wes",
                 "genre": "data_science",
+<<<<<<< HEAD
                 "pages": "233"
+=======
+                "pages": 233
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Catch 22",
                 "author": "Heller, Joseph",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "178"
+=======
+                "pages": 178
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Beyond Degrees",
                 "author": "",
                 "genre": "nonfiction",
+<<<<<<< HEAD
                 "pages": "222"
+=======
+                "pages": 222
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Zen & The Art of Motorcycle Maintenance",
                 "author": "Pirsig, Robert",
                 "genre": "philosophy",
+<<<<<<< HEAD
                 "pages": "172"
+=======
+                "pages": 172
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Code Book, The",
                 "author": "Singh, Simon",
                 "genre": "science",
+<<<<<<< HEAD
                 "pages": "197"
+=======
+                "pages": 197
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Empire of the Mughal - The Serpent's Tooth",
                 "author": "Rutherford, Alex",
                 "genre": "history",
+<<<<<<< HEAD
                 "pages": "180"
+=======
+                "pages": 180
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "India's Legal System",
                 "author": "Nariman",
                 "genre": "nonfiction",
+<<<<<<< HEAD
                 "pages": "177"
+=======
+                "pages": 177
+>>>>>>> refs/remotes/origin/books_distribution
             }
         ]
     },
@@ -1349,43 +2109,71 @@
                 "title": "Introduction to Algorithms",
                 "author": "Cormen, Thomas",
                 "genre": "computer_science",
+<<<<<<< HEAD
                 "pages": "234"
+=======
+                "pages": 234
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Complete Mastermind, The",
                 "author": "BBC",
                 "genre": "nonfiction",
+<<<<<<< HEAD
                 "pages": "178"
+=======
+                "pages": 178
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Manasa",
                 "author": "Kale, V P",
                 "genre": "nonfiction",
+<<<<<<< HEAD
                 "pages": "213"
+=======
+                "pages": 213
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Great War for Civilization, The",
                 "author": "Fisk, Robert",
                 "genre": "history",
+<<<<<<< HEAD
                 "pages": "197"
+=======
+                "pages": 197
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Age of the Warrior, The",
                 "author": "Fisk, Robert",
                 "genre": "history",
+<<<<<<< HEAD
                 "pages": "197"
+=======
+                "pages": 197
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Empire of the Mughal - Raiders from the North",
                 "author": "Rutherford, Alex",
                 "genre": "history",
+<<<<<<< HEAD
                 "pages": "180"
+=======
+                "pages": 180
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "More Tears to Cry",
                 "author": "Sassoon, Jean",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "235"
+=======
+                "pages": 235
+>>>>>>> refs/remotes/origin/books_distribution
             }
         ]
     },
@@ -1399,43 +2187,71 @@
                 "title": "Beautiful and the Damned, The",
                 "author": "Deb, Siddhartha",
                 "genre": "nonfiction",
+<<<<<<< HEAD
                 "pages": "198"
+=======
+                "pages": 198
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Dylan on Dylan",
                 "author": "Dylan, Bob",
                 "genre": "nonfiction",
+<<<<<<< HEAD
                 "pages": "197"
+=======
+                "pages": 197
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "India from Midnight to Milennium",
                 "author": "Tharoor, Shashi",
                 "genre": "history",
+<<<<<<< HEAD
                 "pages": "198"
+=======
+                "pages": 198
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "We the Living",
                 "author": "Rand, Ayn",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "178"
+=======
+                "pages": 178
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Final Crisis",
                 "author": "",
                 "genre": "comic",
+<<<<<<< HEAD
                 "pages": "257"
+=======
+                "pages": 257
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Mossad",
                 "author": "Baz-Zohar, Michael",
                 "genre": "history",
+<<<<<<< HEAD
                 "pages": "236"
+=======
+                "pages": 236
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Ropemaker, The",
                 "author": "Dickinson, Peter",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "196"
+=======
+                "pages": 196
+>>>>>>> refs/remotes/origin/books_distribution
             }
         ]
     },
@@ -1449,43 +2265,71 @@
                 "title": "Outsider, The",
                 "author": "Camus, Albert",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "198"
+=======
+                "pages": 198
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Soft Computing & Intelligent Systems",
                 "author": "Gupta, Madan",
                 "genre": "data_science",
+<<<<<<< HEAD
                 "pages": "242"
+=======
+                "pages": 242
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "World's Greatest Trials, The",
                 "author": "",
                 "genre": "history",
+<<<<<<< HEAD
                 "pages": "210"
+=======
+                "pages": 210
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Artist and the Mathematician, The",
                 "author": "Aczel, Amir",
                 "genre": "science",
+<<<<<<< HEAD
                 "pages": "186"
+=======
+                "pages": 186
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Killing Joke, The",
                 "author": "",
                 "genre": "comic",
+<<<<<<< HEAD
                 "pages": "283"
+=======
+                "pages": 283
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Jim Corbett Omnibus",
                 "author": "Corbett, Jim",
                 "genre": "nonfiction",
+<<<<<<< HEAD
                 "pages": "223"
+=======
+                "pages": 223
+>>>>>>> refs/remotes/origin/books_distribution
             },
             {
                 "title": "Angels & Demons",
                 "author": "Brown, Dan",
                 "genre": "fiction",
+<<<<<<< HEAD
                 "pages": "170"
+=======
+                "pages": 170
+>>>>>>> refs/remotes/origin/books_distribution
             }
         ]
     }
