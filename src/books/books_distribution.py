@@ -1,26 +1,48 @@
-from csv import DictReader
-from functools import reduce
 import json
-
+from csv import DictReader
 
 books_file = "src/books/data/books.csv"
 users_file = "src/books/data/users.json"
 result_file = "src/books/result.json"
+reference_file = "src/books/data/reference.json"
 
-USER_ATTRS= ('name', 'gender', 'age', 'address', 'books')
+USER_ATTRS = ('name', 'gender', 'address', 'age', 'books')
+BOOK_ATTRS = ('title', 'author', 'pages', 'genre')
+
+try:
+    with open(reference_file, mode='r') as f:
+        entry = json.load(f).pop()
+except(FileNotFoundError, IndexError):
+    print('Error: the reference file is unavailable, will use default attrs')
+else:
+    print('Will use user\'s and book\'s attrs from the reference file')
+    USER_ATTRS = tuple(entry.keys())
+    BOOK_ATTRS = tuple(entry['books'].pop().keys())
+
+
+def tryconvert(*types):
+    def convert(value):
+        for t in types:
+            try:
+                return t(value)
+            except (ValueError, TypeError):
+                continue
+        return value
+    return convert
 
 
 def gen_csv(file):
     with open(file, newline='', mode='r') as f:
         for d in DictReader(f):
-            yield {k.lower():v for k,v in d.items()}
+            yield {k.lower(): tryconvert(int)(v)
+                   for k, v in d.items() if k.lower() in BOOK_ATTRS}
 
 
 def gen_json(file):
     with open(file, mode='r') as f:
         for entry in json.load(f):
             entry['books'] = []
-            yield dict(filter(lambda i: i[0] in USER_ATTRS, entry.items()))
+            yield {k: v for k, v in entry.items() if k in USER_ATTRS}
 
 
 if __name__ == '__main__':
@@ -45,4 +67,4 @@ if __name__ == '__main__':
             print(e)
         else:
             print(
-                f"Распределено {total_books} книг между {len(users)} читателями")
+                f"{total_books} books have been distributed among {len(users)} users")
