@@ -1,33 +1,15 @@
-<<<<<<< HEAD
-from csv import DictReader
-=======
->>>>>>> refs/remotes/origin/books_distribution
 import json
 from csv import DictReader
 
 books_file = "src/books/data/books.csv"
 users_file = "src/books/data/users.json"
-result_file = "src/books/result.json"
 reference_file = "src/books/data/reference.json"
+result_file = "src/books/result.json"
 
 USER_ATTRS = ('name', 'gender', 'address', 'age', 'books')
 BOOK_ATTRS = ('title', 'author', 'pages', 'genre')
 
-try:
-    with open(reference_file, mode='r') as f:
-        entry = json.load(f).pop()
-except(FileNotFoundError, IndexError):
-    print('Error: the reference file is unavailable, will use default attrs')
-else:
-    print('Will use user\'s and book\'s attrs from the reference file')
-    USER_ATTRS = tuple(entry.keys())
-    BOOK_ATTRS = tuple(entry['books'].pop().keys())
 
-
-<<<<<<< HEAD
-USER_ATTRS = ('name', 'gender', 'address', 'age', 'books')
-BOOK_ATTRS = ('title', 'author', 'pages', 'genre')
-=======
 def tryconvert(*types):
     def convert(value):
         for t in types:
@@ -37,25 +19,38 @@ def tryconvert(*types):
                 continue
         return value
     return convert
->>>>>>> refs/remotes/origin/books_distribution
+
+
+def get_reference_attrs(file):
+    try:
+        with open(file, mode='r') as f:
+            entry = json.load(f).pop()
+    except(FileNotFoundError, IndexError):
+        return {
+            'user_attrs': USER_ATTRS,
+            'book_attrs': BOOK_ATTRS
+        }
+    else:
+        return {
+            'user_attrs': tuple(entry.keys()),
+            'book_attrs': tuple(entry['books'].pop().keys())
+        }
 
 
 def gen_csv(file):
+    book_attrs = get_reference_attrs(reference_file)['book_attrs']
     with open(file, newline='', mode='r') as f:
         for d in DictReader(f):
-<<<<<<< HEAD
-            yield {k.lower(): v for k, v in d.items() if k.lower() in BOOK_ATTRS}
-=======
             yield {k.lower(): tryconvert(int)(v)
-                   for k, v in d.items() if k.lower() in BOOK_ATTRS}
->>>>>>> refs/remotes/origin/books_distribution
+                   for k, v in d.items() if k.lower() in book_attrs}
 
 
 def gen_json(file):
+    user_attrs = get_reference_attrs(reference_file)['user_attrs']
     with open(file, mode='r') as f:
         for entry in json.load(f):
             entry['books'] = []
-            yield {k: v for k, v in entry.items() if k in USER_ATTRS}
+            yield {k: v for k, v in entry.items() if k in user_attrs}
 
 
 if __name__ == '__main__':
