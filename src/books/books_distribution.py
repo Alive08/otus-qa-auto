@@ -3,7 +3,6 @@ from csv import DictReader
 
 books_file = "src/books/data/books.csv"
 users_file = "src/books/data/users.json"
-reference_file = "src/books/data/reference.json"
 result_file = "src/books/result.json"
 
 USER_ATTRS = ('name', 'gender', 'address', 'age', 'books')
@@ -21,36 +20,18 @@ def tryconvert(*types):
     return convert
 
 
-def get_reference_attrs(file):
-    try:
-        with open(file, mode='r') as f:
-            entry = json.load(f).pop()
-    except(FileNotFoundError, IndexError):
-        return {
-            'user_attrs': USER_ATTRS,
-            'book_attrs': BOOK_ATTRS
-        }
-    else:
-        return {
-            'user_attrs': tuple(entry.keys()),
-            'book_attrs': tuple(entry['books'].pop().keys())
-        }
-
-
 def gen_csv(file):
-    book_attrs = get_reference_attrs(reference_file)['book_attrs']
     with open(file, newline='', mode='r') as f:
         for d in DictReader(f):
             yield {k.lower(): tryconvert(int)(v)
-                   for k, v in d.items() if k.lower() in book_attrs}
+                   for k, v in d.items() if k.lower() in BOOK_ATTRS}
 
 
 def gen_json(file):
-    user_attrs = get_reference_attrs(reference_file)['user_attrs']
     with open(file, mode='r') as f:
         for entry in json.load(f):
             entry['books'] = []
-            yield {k: v for k, v in entry.items() if k in user_attrs}
+            yield {k: v for k, v in entry.items() if k in USER_ATTRS}
 
 
 if __name__ == '__main__':
