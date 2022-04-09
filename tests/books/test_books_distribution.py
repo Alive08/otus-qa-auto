@@ -2,8 +2,6 @@ import json
 import jsonschema
 import pytest
 
-
-reference_file = 'src/books/data/reference.json'
 result_file = 'src/books/result.json'
 
 
@@ -36,28 +34,11 @@ def user_schema():
     }
 
 
-@pytest.fixture
-def reference_entry():
-    with open(reference_file, mode='r') as f:
-
-        yield json.load(f).pop()
-
-
 def users():
     with open(result_file, mode='r') as f:
         for user in json.load(f):
 
             yield user
-
-
-def test_reference_schema(reference_entry, user_schema):
-    '''
-    Тест проверяет валидность референсного файла
-    '''
-    try:
-        jsonschema.validate(instance=reference_entry, schema=user_schema)
-    except jsonschema.exceptions.ValidationError as err:
-        raise AssertionError
 
 
 @pytest.mark.parametrize("user", [u for u in users()])
