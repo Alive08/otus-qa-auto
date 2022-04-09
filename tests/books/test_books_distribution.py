@@ -50,7 +50,7 @@ def users():
             yield user
 
 
-def test_reference_for_schema(reference_entry, user_schema):
+def test_reference_schema(reference_entry, user_schema):
     '''
     Тест проверяет валидность референсного файла
     '''
@@ -61,7 +61,7 @@ def test_reference_for_schema(reference_entry, user_schema):
 
 
 @pytest.mark.parametrize("user", [u for u in users()])
-def test_every_user_entry_struture(user, user_schema):
+def test_every_user_entry_schema(user, user_schema):
     '''
     тест проверяет каждую запись о пользователе
     в файле results.json на соответствие схеме
