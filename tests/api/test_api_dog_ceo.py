@@ -1,13 +1,14 @@
-from hamcrest import *
-from jsonschema import validate
-from jsonschema.exceptions import ValidationError
 import pytest
-from src.api.simple_api_client import SimpleApiClient, proxies
+from src.api.simple_api_client import SimpleApiClient
 
 base_url = 'https://dog.ceo/api'
 
+proxies = {
+    "http": "http://127.0.0.0:8080",
+    "https": "http://127.0.0.1:8080"
+}
 
-api_schema = {
+dogs_api_schema = {
 
     'dict_string': {
         "type": "object",
@@ -25,7 +26,6 @@ api_schema = {
             "status": {"type": "string"},
             "message": {
                 "type": "array",
-                "minItems": 1,
                 "items": {"type": "string"}
             }
         }
@@ -47,152 +47,114 @@ api_schema = {
                 }
             }
         }
-    },
-
-
+    }
 }
 
+# full list with sub-breeds
+breeds_list = SimpleApiClient(url=base_url, verify=False, proxies=None).GET(
+    '/breeds/list/all').json()['message']
 
-@pytest.fixture
-def api():
+sub_breeds_list = []
 
-    yield SimpleApiClient(url=base_url, verify=False, proxies=proxies)
-
-
-def test_breeds_list(api):
-    r = api.GET('/breeds/list')
-    assert r.status_code == 200
-    assert r.json()['status'] == 'success'
-    try:
-        validate(instance=r.json(), schema=api_schema['dict_array_string'])
-    except ValidationError as err:
-        raise AssertionError
-    print(r.json())
-
-def test_breeds_list_all(api):
-    r = api.GET('/breeds/list/all')
-    assert r.status_code == 200
-    assert r.json()['status'] == 'success'
-    try:
-        validate(instance=r.json(),
-                 schema=api_schema['dict_dict_array_string'])
-    except ValidationError as err:
-        raise AssertionError
+for k, v in breeds_list.items():
+    if len(v):
+        for sb in v:
+            sub_breeds_list.append((k, sb))
 
 
-
-def test_breeds_image_random(api):
-    r = api.GET('/breeds/image/random')
-    j = r.json()
-    assert r.status_code == 200
-    assert j['status'] == 'success'
-    try:
-        validate(instance=r.json(), schema=api_schema['dict_string'])
-    except ValidationError as err:
-        raise AssertionError from err
+def idfn(val):
+    if isinstance(val, str):
+        return val.title()
+    if isinstance(val, tuple):
+        return f'{val[1].title()} {val[0].title()}'
 
 
-@pytest.mark.parametrize('n', range(1, 4))
-def test_breeds_image_random_multiple(n, api):
-    with api.GET(f'/breeds/image/random/{n}') as r:
-        j = r.json()
-        assert r.status_code == 200
-        assert j['status'] == 'success'
-        assert len(j['message']) == n
-    try:
-        validate(instance=r.json(), schema=api_schema['dict_array_string'])
-    except ValidationError as err:
-        raise AssertionError
-
-
-def test_breed_hound_images_all(api):
-    r = api.GET('/breed/hound/images')
-    j = r.json()
-    assert r.status_code == 200
-    assert j['status'] == 'success'
-    try:
-        validate(instance=r.json(), schema=api_schema['dict_array_string'])
-    except ValidationError as err:
-        raise AssertionError
-
-
-def test_breed_hound_image_random(api):
-    r = api.GET('/breed/hound/images/random')
-    j = r.json()
-    assert r.status_code == 200
-    assert j['status'] == 'success'
-    try:
-        validate(instance=r.json(), schema=api_schema['dict_string'])
-    except ValidationError as err:
-        raise AssertionError
-
-
-@pytest.mark.parametrize('n', range(1, 4))
-def test_breed_hound_image_random_multiple(n, api):
-    with api.GET(f'/breed/hound/images/random/{n}') as r:
-        j = r.json()
-        assert r.status_code == 200
-        assert j['status'] == 'success'
-        assert type(j['message']) == list
-        assert len(j['message']) == n
-    try:
-        validate(instance=r.json(), schema=api_schema['dict_array_string'])
-    except ValidationError as err:
-        raise AssertionError
-
-
-def test_breed_hound_list(api):
-    r = api.GET('/breed/hound/list')
-    j = r.json()
-    assert r.status_code == 200
-    assert j['status'] == 'success'
-    try:
-        validate(instance=r.json(), schema=api_schema['dict_array_string'])
-    except ValidationError as err:
-        raise AssertionError
-
-
-breed_list = SimpleApiClient(url=base_url, verify=False, proxies=proxies).GET(
-    '/breed/hound/list').json()['message']
-
-
-@pytest.fixture(params=breed_list)
-def get_breed(request):
-
+@pytest.fixture(params=breeds_list.keys(), ids=idfn, scope='session')
+def breed(request):
     yield request.param
 
 
-# в этот тест передается параметризованная фикстура (get_bread)
-def test_breed_hound_sub_bread_images(api, get_breed):
-    r = api.GET(f'/breed/hound/{get_breed}/images')
-    j = r.json()
-    assert r.status_code == 200
-    assert j['status'] == 'success'
-    try:
-        validate(instance=r.json(), schema=api_schema['dict_array_string'])
-    except ValidationError as err:
-        raise AssertionError
+@pytest.fixture(params=sub_breeds_list, ids=idfn, scope='session')
+def sub_breed(request):
+    yield request.param
 
 
-def test_breed_hound_sub_bread_images_random(api, get_breed):
-    r = api.GET(f'/breed/hound/{get_breed}/images/random')
-    j = r.json()
-    assert r.status_code == 200
-    assert j['status'] == 'success'
-    try:
-        validate(instance=r.json(), schema=api_schema['dict_string'])
-    except ValidationError as err:
-        raise AssertionError
+@pytest.fixture(scope='session')
+def api():
+    yield SimpleApiClient(url=base_url, verify=False, proxies=proxies)
+
+# --- tests without sub-breads
 
 
-@pytest.mark.parametrize('n', range(1, 4))
-def test_breed_hound_sub_bread_images_random_n(n, api, get_breed):
-    r = api.GET(f'/breed/hound/{get_breed}/images/random/{n}')
-    j = r.json()
-    assert r.status_code == 200
-    assert j['status'] == 'success'
-    try:
-        validate(instance=r.json(), schema=api_schema['dict_array_string'])
-    except ValidationError as err:
-        raise AssertionError
+def test_breeds_list(api):
+    api.GET('/breeds/list')
+    assert api.check_if_success()
+    assert api.validate_json(schema=dogs_api_schema['dict_array_string'])
 
+
+def test_breeds_list_all(api):
+    api.GET('/breeds/list/all')
+    assert api.check_if_success()
+    assert api.validate_json(schema=dogs_api_schema['dict_dict_array_string'])
+
+
+def test_breeds_image_random(api):
+    api.GET('/breeds/image/random')
+    assert api.check_if_success()
+    assert api.validate_json(schema=dogs_api_schema['dict_string'])
+
+
+@pytest.mark.parametrize('n', range(1, 3))
+def test_breeds_image_random_multiple(api, n):
+    api.GET(f'/breeds/image/random/{n}')
+    assert api.check_if_success()
+    assert api.validate_json(schema=dogs_api_schema['dict_array_string'])
+
+# --- tests with sub-breads
+
+
+def test_breed_list(api, breed):
+    api.GET(f'/breed/{breed}/list')
+    assert api.check_if_success()
+    assert api.validate_json(schema=dogs_api_schema['dict_array_string'])
+
+
+def test_breed_images_all(api, breed):
+    api.GET(f'/breed/{breed}/images')
+    assert api.check_if_success()
+    assert api.validate_json(schema=dogs_api_schema['dict_array_string'])
+
+
+def test_breed_image_random(api, breed):
+    api.GET(f'/breed/{breed}/images/random')
+    assert api.check_if_success()
+    assert api.validate_json(schema=dogs_api_schema['dict_string'])
+
+
+@pytest.mark.parametrize('n', range(1, 3))
+def test_breed_image_random_multiple(api, breed, n):
+    api.GET(f'/breed/{breed}/images/random/{n}')
+    assert api.check_if_success()
+    assert api.validate_json(schema=dogs_api_schema['dict_array_string'])
+
+
+# --- tests on images with sub-breads
+
+
+def test_breed_sub_breed_images(api, sub_breed):
+    api.GET(f'/breed/{sub_breed[0]}/{sub_breed[1]}/images')
+    assert api.check_if_success()
+    assert api.validate_json(schema=dogs_api_schema['dict_array_string'])
+
+
+def test_breed_sub_breed_images_random(api, sub_breed):
+    api.GET(f'/breed/{sub_breed[0]}/{sub_breed[1]}/images/random')
+    assert api.check_if_success()
+    assert api.validate_json(schema=dogs_api_schema['dict_string'])
+
+
+@pytest.mark.parametrize('n', range(1, 2))
+def test_breed_sub_bread_images_random_multiple(api, n, sub_breed):
+    api.GET(f'/breed/{sub_breed[0]}/{sub_breed[1]}/images/random/{n}')
+    assert api.check_if_success()
+    assert api.validate_json(schema=dogs_api_schema['dict_array_string'])

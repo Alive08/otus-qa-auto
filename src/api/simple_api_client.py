@@ -1,12 +1,6 @@
-from socket import timeout
 import requests
-import json
-
-
-proxies = {
-    "http": "http://vkozlov:8080",
-    "https": "http://vkozlov:8080"
-}
+from jsonschema import validate
+from jsonschema.exceptions import ValidationError
 
 
 class SimpleApiClient:
@@ -18,7 +12,7 @@ class SimpleApiClient:
         for k, v in kwargs.items():
             self.__dict__[k] = v
             self.session.__dict__[k] = v
-        
+
         self.url = url
 
     @property
@@ -29,18 +23,21 @@ class SimpleApiClient:
     def url(self, value):
         self.__url = value
 
-
     def GET(self, url='', **kwargs):
-        return self.session.get(self.url + url, **kwargs)
+        self.response = self.session.get(self.url + url, **kwargs)
+        return self.response
 
     def POST(self, url='', **kwargs):
         return self.session.post(self.url + url, **kwargs)
 
+    def check_if_success(self):
+        return self.response.status_code == 200 and \
+            self.response.json()['status'] == 'success'
 
-
-c = SimpleApiClient(proxies=proxies, verify=False, timeout=1)
-c.url = 'https://dog.ceo/api/'
-r = c.GET('breeds/list')
-
-print(r.status_code)
-
+    def validate_json(self, schema):
+        try:
+            validate(instance=self.response.json(),
+                     schema=schema)
+        except ValidationError as err:
+            raise AssertionError from err
+        return True
