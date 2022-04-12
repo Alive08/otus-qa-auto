@@ -154,7 +154,7 @@ def test_breed_sub_breed_images_random(api, sub_breed):
     assert api.validate_json(schema=dogs_api_schema['dict_string'])
 
 
-@pytest.mark.parametrize('n', range(1, 2))
+@pytest.mark.parametrize('n', range(1, 3))
 def test_breed_sub_bread_images_random_multiple(api, n, sub_breed):
     api.GET(f'/breed/{sub_breed[0]}/{sub_breed[1]}/images/random/{n}')
     assert api.check_if_success()
