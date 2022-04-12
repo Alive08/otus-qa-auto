@@ -1,11 +1,12 @@
+from multiprocessing import dummy
 import pytest
 from src.api.simple_api_client import SimpleApiClient
 
 base_url = 'https://dog.ceo/api'
 
 proxies = {
-    "http": "http://127.0.0.0:8080",
-    "https": "http://127.0.0.1:8080"
+    "http": "http://vkozlov:8080",
+    "https": "http://vkozlov:8080"
 }
 
 dogs_api_schema = {
@@ -50,16 +51,15 @@ dogs_api_schema = {
     }
 }
 
-# full list with sub-breeds
-breeds_list = SimpleApiClient(url=base_url, verify=False, proxies=None).GET(
+# full list of breeds with sub-breeds
+raw_breeds_list = SimpleApiClient(url=base_url, verify=False, proxies=None).GET(
     '/breeds/list/all').json()['message']
 
-sub_breeds_list = []
 
-for k, v in breeds_list.items():
-    if len(v):
-        for sb in v:
-            sub_breeds_list.append((k, sb))
+def breeds():
+    for breed, val in raw_breeds_list.items():
+        for subbreed in val:
+            yield breed, subbreed
 
 
 def idfn(val):
@@ -67,14 +67,15 @@ def idfn(val):
         return val.title()
     if isinstance(val, tuple):
         return f'{val[1].title()} {val[0].title()}'
+    return val
 
 
-@pytest.fixture(params=breeds_list.keys(), ids=idfn, scope='session')
+@pytest.fixture(params=set(b for b, dummy in breeds()), ids=idfn, scope='session')
 def breed(request):
     yield request.param
 
 
-@pytest.fixture(params=sub_breeds_list, ids=idfn, scope='session')
+@pytest.fixture(params=breeds(), ids=idfn, scope='session')
 def sub_breed(request):
     yield request.param
 

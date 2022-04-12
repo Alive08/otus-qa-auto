@@ -28,7 +28,8 @@ class SimpleApiClient:
         return self.response
 
     def POST(self, url='', **kwargs):
-        return self.session.post(self.url + url, **kwargs)
+        self.response = self.session.post(self.url + url, **kwargs)
+        return self.response
 
     def check_if_success(self):
         return self.response.status_code == 200 and \
