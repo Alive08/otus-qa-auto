@@ -1,4 +1,3 @@
-from multiprocessing import dummy
 import pytest
 from src.api.simple_api_client import SimpleApiClient
 
@@ -56,8 +55,8 @@ raw_breeds_list = SimpleApiClient(url=base_url, verify=False, proxies=None).GET(
     '/breeds/list/all').json()['message']
 
 
-def breeds():
-    for breed, val in raw_breeds_list.items():
+def breeds(res):
+    for breed, val in res.items():
         for subbreed in val:
             yield breed, subbreed
 
@@ -70,19 +69,22 @@ def idfn(val):
     return val
 
 
-@pytest.fixture(params=set(b for b, dummy in breeds()), ids=idfn, scope='session')
+@pytest.fixture(params=set(b for b, dummy in breeds(raw_breeds_list)), ids=idfn, scope='session')
 def breed(request):
     yield request.param
 
 
-@pytest.fixture(params=breeds(), ids=idfn, scope='session')
+@pytest.fixture(params=breeds(raw_breeds_list), ids=idfn, scope='session')
 def sub_breed(request):
     yield request.param
 
 
 @pytest.fixture(scope='session')
 def api():
-    yield SimpleApiClient(url=base_url, verify=False, proxies=proxies)
+    def success_validator(obj):
+        return obj.response.json()['status'] == 'success'
+
+    yield SimpleApiClient(url=base_url, verify=False, proxies=proxies, validator=success_validator)
 
 # --- tests without sub-breads
 
@@ -155,7 +157,7 @@ def test_breed_sub_breed_images_random(api, sub_breed):
 
 
 @pytest.mark.parametrize('n', range(1, 3))
-def test_breed_sub_bread_images_random_multiple(api, n, sub_breed):
+def test_breed_sub_breed_images_random_multiple(api, n, sub_breed):
     api.GET(f'/breed/{sub_breed[0]}/{sub_breed[1]}/images/random/{n}')
     assert api.check_if_success()
     assert api.validate_json(schema=dogs_api_schema['dict_array_string'])

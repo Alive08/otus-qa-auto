@@ -32,8 +32,10 @@ class SimpleApiClient:
         return self.response
 
     def check_if_success(self):
-        return self.response.status_code == 200 and \
-            self.response.json()['status'] == 'success'
+        res = True
+        if hasattr(self, 'validator'):
+            res = self.validator(self)
+        return res and self.response.status_code == 200
 
     def validate_json(self, schema):
         try:
