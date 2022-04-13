@@ -13,7 +13,7 @@ proxies = {
 }
 
 
-brewery_schema = {
+single_brewery_schema = {
     "type": "object",
     "required": ["id", "name", "brewery_type",
                 "city", "state",  "country",
@@ -40,6 +40,11 @@ brewery_schema = {
 }
 
 
+multiple_brewery_schema = {
+    "type": "array",
+    "items": single_brewery_schema
+}
+
 @pytest.fixture(scope='session')
 def api():
 
@@ -60,7 +65,7 @@ def brewery_list(request):
 
 def test_brewery_list_all(brewery_list):
     try:
-        validate(instance=brewery_list, schema=brewery_schema)
+        validate(instance=brewery_list, schema=single_brewery_schema)
     except ValidationError as err:
         raise AssertionError from err
     print(brewery_list)
@@ -69,5 +74,5 @@ def test_brewery_list_all(brewery_list):
 def test_brewery_search(api):
     api.GET('/search', params={'query': 'dog'})
     assert api.check_if_success()
-    assert api.validate_json(schema=brewery_schema)
+    assert api.validate_json(schema=multiple_brewery_schema)
 
