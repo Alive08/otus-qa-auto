@@ -16,8 +16,8 @@ proxies = {
 single_brewery_schema = {
     "type": "object",
     "required": ["id", "name", "brewery_type",
-                "city", "state",  "country",
-                "updated_at", "created_at"],
+                 "city", "state",  "country",
+                 "updated_at", "created_at"],
     "properties": {
         "id": {"type": ["integer", "string"]},
         "name": {"type": "string"},
@@ -44,6 +44,7 @@ multiple_brewery_schema = {
     "type": "array",
     "items": single_brewery_schema
 }
+
 
 @pytest.fixture(scope='session')
 def api():
