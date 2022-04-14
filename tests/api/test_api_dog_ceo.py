@@ -4,8 +4,8 @@ from src.api.simple_api_client import SimpleApiClient
 base_url = 'https://dog.ceo/api'
 
 proxies = {
-    "http": "http://vkozlov:8080",
-    "https": "http://vkozlov:8080"
+    "http": "http://localhost:8080",
+    "https": "http://localhost:8080"
 }
 
 dogs_api_schema = {
@@ -84,7 +84,7 @@ def api():
     def success_validator(obj):
         return obj.response.json()['status'] == 'success'
 
-    yield SimpleApiClient(url=base_url, verify=False, proxies=proxies, validator=success_validator)
+    yield SimpleApiClient(url=base_url, verify=False, proxies=None, validator=success_validator)
 
 # --- tests without sub-breads
 
