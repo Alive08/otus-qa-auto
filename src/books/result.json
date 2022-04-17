@@ -1,5 +1,655 @@
 [
     {
+        "age": 36,
+        "name": "Ruiz Phelps",
+        "gender": "male",
+        "address": "836 Troutman Street, Harborton, Kentucky, 4030",
+        "books": [
+            {
+                "title": "Trial, The",
+                "author": "Kafka, Frank",
+                "genre": "fiction",
+                "pages": 198
+            },
+            {
+                "title": "Freakonomics",
+                "author": "Dubner, Stephen",
+                "genre": "economics",
+                "pages": 197
+            },
+            {
+                "title": "Prisoner of Birth, A",
+                "author": "Archer, Jeffery",
+                "genre": "fiction",
+                "pages": 176
+            },
+            {
+                "title": "Doctor in the Nude",
+                "author": "Gordon, Richard",
+                "genre": "fiction",
+                "pages": 179
+            },
+            {
+                "title": "Rosy is My Relative",
+                "author": "Durrell, Gerald",
+                "genre": "fiction",
+                "pages": 176
+            },
+            {
+                "title": "Power Electronics - Rashid",
+                "author": "Rashid, Muhammad",
+                "genre": "computer_science",
+                "pages": 235
+            },
+            {
+                "title": "Oxford book of Modern Science Writing",
+                "author": "Dawkins, Richard",
+                "genre": "science",
+                "pages": 240
+            }
+        ]
+    },
+    {
+        "age": 31,
+        "name": "Carolina Bryant",
+        "gender": "female",
+        "address": "377 Middagh Street, Ellerslie, Nebraska, 2644",
+        "books": [
+            {
+                "title": "Statistical Decision Theory'",
+                "author": "Pratt, John",
+                "genre": "data_science",
+                "pages": 236
+            },
+            {
+                "title": "Hidden Connections, The",
+                "author": "Capra, Fritjof",
+                "genre": "science",
+                "pages": 197
+            },
+            {
+                "title": "Scoop!",
+                "author": "Nayar, Kuldip",
+                "genre": "history",
+                "pages": 216
+            },
+            {
+                "title": "Down and Out in Paris & London",
+                "author": "Orwell, George",
+                "genre": "nonfiction",
+                "pages": 179
+            },
+            {
+                "title": "Moon and Sixpence, The",
+                "author": "Maugham, William S",
+                "genre": "fiction",
+                "pages": 180
+            },
+            {
+                "title": "Power Electronics - Mohan",
+                "author": "Mohan, Ned",
+                "genre": "computer_science",
+                "pages": 237
+            },
+            {
+                "title": "Justice, Judiciary and Democracy",
+                "author": "Ranjan, Sudhanshu",
+                "genre": "philosophy",
+                "pages": 224
+            }
+        ]
+    },
+    {
+        "age": 31,
+        "name": "Sosa Lee",
+        "gender": "male",
+        "address": "364 Holly Street, Omar, California, 5140",
+        "books": [
+            {
+                "title": "Data Mining Handbook",
+                "author": "Nisbet, Robert",
+                "genre": "data_science",
+                "pages": 242
+            },
+            {
+                "title": "Story of Philosophy, The",
+                "author": "Durant, Will",
+                "genre": "philosophy",
+                "pages": 170
+            },
+            {
+                "title": "Ahe Manohar Tari",
+                "author": "Deshpande, Sunita",
+                "genre": "nonfiction",
+                "pages": 213
+            },
+            {
+                "title": "Identity & Violence",
+                "author": "Sen, Amartya",
+                "genre": "philosophy",
+                "pages": 219
+            },
+            {
+                "title": "Political Philosophers",
+                "author": "",
+                "genre": "philosophy",
+                "pages": 162
+            },
+            {
+                "title": "Neural Networks",
+                "author": "Haykin, Simon",
+                "genre": "data_science",
+                "pages": 240
+            },
+            {
+                "title": "Arthashastra, The",
+                "author": "Kautiyla",
+                "genre": "philosophy",
+                "pages": 214
+            }
+        ]
+    },
+    {
+        "age": 24,
+        "name": "Lorna Scott",
+        "gender": "female",
+        "address": "878 Marconi Place, Gerton, Alabama, 845",
+        "books": [
+            {
+                "title": "New Machiavelli, The",
+                "author": "Wells, H. G.",
+                "genre": "fiction",
+                "pages": 180
+            },
+            {
+                "title": "Asami Asami",
+                "author": "Deshpande, P L",
+                "genre": "fiction",
+                "pages": 205
+            },
+            {
+                "title": "Last Mughal, The",
+                "author": "Dalrymple, William",
+                "genre": "history",
+                "pages": 199
+            },
+            {
+                "title": "Beyond the Three Seas",
+                "author": "Dalrymple, William",
+                "genre": "history",
+                "pages": 197
+            },
+            {
+                "title": "Short History of the World, A",
+                "author": "Wells, H G",
+                "genre": "history",
+                "pages": 197
+            },
+            {
+                "title": "Grapes of Wrath, The",
+                "author": "Steinbeck, John",
+                "genre": "fiction",
+                "pages": 196
+            },
+            {
+                "title": "We the People",
+                "author": "Palkhivala",
+                "genre": "philosophy",
+                "pages": 216
+            }
+        ]
+    },
+    {
+        "age": 32,
+        "name": "Bernard Holden",
+        "gender": "male",
+        "address": "674 Pine Street, Conestoga, Mississippi, 4727",
+        "books": [
+            {
+                "title": "Physics & Philosophy",
+                "author": "Heisenberg, Werner",
+                "genre": "science",
+                "pages": 197
+            },
+            {
+                "title": "Journal of a Novel",
+                "author": "Steinbeck, John",
+                "genre": "fiction",
+                "pages": 196
+            },
+            {
+                "title": "Social Choice & Welfare, Vol 39 No. 1",
+                "author": "Various",
+                "genre": "economics",
+                "pages": 235
+            },
+            {
+                "title": "World's Greatest Short Stories, The",
+                "author": "",
+                "genre": "fiction",
+                "pages": 217
+            },
+            {
+                "title": "Trembling of a Leaf, The",
+                "author": "Maugham, William S",
+                "genre": "fiction",
+                "pages": 205
+            },
+            {
+                "title": "Vyakti ani Valli",
+                "author": "Deshpande, P L",
+                "genre": "nonfiction",
+                "pages": 211
+            },
+            {
+                "title": "We the Nation",
+                "author": "Palkhivala",
+                "genre": "philosophy",
+                "pages": 216
+            }
+        ]
+    },
+    {
+        "age": 31,
+        "name": "Craft Shields",
+        "gender": "male",
+        "address": "586 Java Street, Catherine, Arkansas, 1445",
+        "books": [
+            {
+                "title": "Making Software",
+                "author": "Oram, Andy",
+                "genre": "computer_science",
+                "pages": 232
+            },
+            {
+                "title": "Once There Was a War",
+                "author": "Steinbeck, John",
+                "genre": "nonfiction",
+                "pages": 196
+            },
+            {
+                "title": "Radiowaril Bhashane & Shrutika",
+                "author": "Deshpande, P L",
+                "genre": "nonfiction",
+                "pages": 213
+            },
+            {
+                "title": "Talking Straight",
+                "author": "Iacoca, Lee",
+                "genre": "nonfiction",
+                "pages": 175
+            },
+            {
+                "title": "Doctor on the Brain",
+                "author": "Gordon, Richard",
+                "genre": "fiction",
+                "pages": 204
+            },
+            {
+                "title": "Statistical Learning Theory",
+                "author": "Vapnik, Vladimir",
+                "genre": "data_science",
+                "pages": 228
+            },
+            {
+                "title": "Courtroom Genius, The",
+                "author": "Sorabjee",
+                "genre": "nonfiction",
+                "pages": 217
+            }
+        ]
+    },
+    {
+        "age": 23,
+        "name": "Mara English",
+        "gender": "female",
+        "address": "324 Herkimer Court, Boomer, Delaware, 5367",
+        "books": [
+            {
+                "title": "Analysis, Vol I",
+                "author": "Tao, Terence",
+                "genre": "mathematics",
+                "pages": 248
+            },
+            {
+                "title": "Moon is Down, The",
+                "author": "Steinbeck, John",
+                "genre": "fiction",
+                "pages": 196
+            },
+            {
+                "title": "Gun Gayin Awadi",
+                "author": "Deshpande, P L",
+                "genre": "nonfiction",
+                "pages": 212
+            },
+            {
+                "title": "Maugham's Collected Short Stories, Vol 3",
+                "author": "Maugham, William S",
+                "genre": "fiction",
+                "pages": 171
+            },
+            {
+                "title": "Simpsons & Their Mathematical Secrets",
+                "author": "Singh, Simon",
+                "genre": "science",
+                "pages": 233
+            },
+            {
+                "title": "Empire of the Mughal - The Tainted Throne",
+                "author": "Rutherford, Alex",
+                "genre": "history",
+                "pages": 180
+            },
+            {
+                "title": "Dongri to Dubai",
+                "author": "Zaidi, Hussain",
+                "genre": "nonfiction",
+                "pages": 216
+            }
+        ]
+    },
+    {
+        "age": 30,
+        "name": "Fisher Levy",
+        "gender": "male",
+        "address": "540 Adler Place, Hachita, Federated States Of Micronesia, 9894",
+        "books": [
+            {
+                "title": "Machine Learning for Hackers",
+                "author": "Conway, Drew",
+                "genre": "data_science",
+                "pages": 233
+            },
+            {
+                "title": "Brethren, The",
+                "author": "Grisham, John",
+                "genre": "fiction",
+                "pages": 174
+            },
+            {
+                "title": "Aghal Paghal",
+                "author": "Deshpande, P L",
+                "genre": "nonfiction",
+                "pages": 212
+            },
+            {
+                "title": "Phantom of Manhattan, The",
+                "author": "Forsyth, Frederick",
+                "genre": "fiction",
+                "pages": 180
+            },
+            {
+                "title": "Pattern Classification",
+                "author": "Duda, Hart",
+                "genre": "data_science",
+                "pages": 241
+            },
+            {
+                "title": "Empire of the Mughal - Brothers at War",
+                "author": "Rutherford, Alex",
+                "genre": "history",
+                "pages": 180
+            },
+            {
+                "title": "History of England, Foundation",
+                "author": "Ackroyd, Peter",
+                "genre": "history",
+                "pages": 197
+            }
+        ]
+    },
+    {
+        "age": 25,
+        "name": "Cecelia Snyder",
+        "gender": "female",
+        "address": "236 Anchorage Place, Odessa, Michigan, 6314",
+        "books": [
+            {
+                "title": "Signal and the Noise, The",
+                "author": "Silver, Nate",
+                "genre": "data_science",
+                "pages": 233
+            },
+            {
+                "title": "In a Free State",
+                "author": "Naipaul, V. S.",
+                "genre": "fiction",
+                "pages": 196
+            },
+            {
+                "title": "Maqta-e-Ghalib",
+                "author": "Garg, Sanjay",
+                "genre": "fiction",
+                "pages": 221
+            },
+            {
+                "title": "Ashenden of The British Agent",
+                "author": "Maugham, William S",
+                "genre": "fiction",
+                "pages": 160
+            },
+            {
+                "title": "From Beirut to Jerusalem",
+                "author": "Friedman, Thomas",
+                "genre": "history",
+                "pages": 202
+            },
+            {
+                "title": "Empire of the Mughal - Ruler of the World",
+                "author": "Rutherford, Alex",
+                "genre": "history",
+                "pages": 180
+            },
+            {
+                "title": "City of Djinns",
+                "author": "Dalrymple, William",
+                "genre": "history",
+                "pages": 198
+            }
+        ]
+    },
+    {
+        "age": 22,
+        "name": "Nina Kaufman",
+        "gender": "female",
+        "address": "538 Ashford Street, Boling, West Virginia, 7840",
+        "books": [
+            {
+                "title": "Python for Data Analysis",
+                "author": "McKinney, Wes",
+                "genre": "data_science",
+                "pages": 233
+            },
+            {
+                "title": "Catch 22",
+                "author": "Heller, Joseph",
+                "genre": "fiction",
+                "pages": 178
+            },
+            {
+                "title": "Beyond Degrees",
+                "author": "",
+                "genre": "nonfiction",
+                "pages": 222
+            },
+            {
+                "title": "Zen & The Art of Motorcycle Maintenance",
+                "author": "Pirsig, Robert",
+                "genre": "philosophy",
+                "pages": 172
+            },
+            {
+                "title": "Code Book, The",
+                "author": "Singh, Simon",
+                "genre": "science",
+                "pages": 197
+            },
+            {
+                "title": "Empire of the Mughal - The Serpent's Tooth",
+                "author": "Rutherford, Alex",
+                "genre": "history",
+                "pages": 180
+            },
+            {
+                "title": "India's Legal System",
+                "author": "Nariman",
+                "genre": "nonfiction",
+                "pages": 177
+            }
+        ]
+    },
+    {
+        "age": 37,
+        "name": "Dillard Branch",
+        "gender": "male",
+        "address": "225 Hampton Avenue, Bethany, Pennsylvania, 8056",
+        "books": [
+            {
+                "title": "Introduction to Algorithms",
+                "author": "Cormen, Thomas",
+                "genre": "computer_science",
+                "pages": 234
+            },
+            {
+                "title": "Complete Mastermind, The",
+                "author": "BBC",
+                "genre": "nonfiction",
+                "pages": 178
+            },
+            {
+                "title": "Manasa",
+                "author": "Kale, V P",
+                "genre": "nonfiction",
+                "pages": 213
+            },
+            {
+                "title": "Great War for Civilization, The",
+                "author": "Fisk, Robert",
+                "genre": "history",
+                "pages": 197
+            },
+            {
+                "title": "Age of the Warrior, The",
+                "author": "Fisk, Robert",
+                "genre": "history",
+                "pages": 197
+            },
+            {
+                "title": "Empire of the Mughal - Raiders from the North",
+                "author": "Rutherford, Alex",
+                "genre": "history",
+                "pages": 180
+            },
+            {
+                "title": "More Tears to Cry",
+                "author": "Sassoon, Jean",
+                "genre": "fiction",
+                "pages": 235
+            }
+        ]
+    },
+    {
+        "age": 33,
+        "name": "Dyer Bartlett",
+        "gender": "male",
+        "address": "880 Meadow Street, Seymour, Puerto Rico, 7921",
+        "books": [
+            {
+                "title": "Beautiful and the Damned, The",
+                "author": "Deb, Siddhartha",
+                "genre": "nonfiction",
+                "pages": 198
+            },
+            {
+                "title": "Dylan on Dylan",
+                "author": "Dylan, Bob",
+                "genre": "nonfiction",
+                "pages": 197
+            },
+            {
+                "title": "India from Midnight to Milennium",
+                "author": "Tharoor, Shashi",
+                "genre": "history",
+                "pages": 198
+            },
+            {
+                "title": "We the Living",
+                "author": "Rand, Ayn",
+                "genre": "fiction",
+                "pages": 178
+            },
+            {
+                "title": "Final Crisis",
+                "author": "",
+                "genre": "comic",
+                "pages": 257
+            },
+            {
+                "title": "Mossad",
+                "author": "Baz-Zohar, Michael",
+                "genre": "history",
+                "pages": 236
+            },
+            {
+                "title": "Ropemaker, The",
+                "author": "Dickinson, Peter",
+                "genre": "fiction",
+                "pages": 196
+            }
+        ]
+    },
+    {
+        "age": 20,
+        "name": "Tyler Dotson",
+        "gender": "male",
+        "address": "220 Herkimer Place, Turpin, Oklahoma, 4468",
+        "books": [
+            {
+                "title": "Outsider, The",
+                "author": "Camus, Albert",
+                "genre": "fiction",
+                "pages": 198
+            },
+            {
+                "title": "Soft Computing & Intelligent Systems",
+                "author": "Gupta, Madan",
+                "genre": "data_science",
+                "pages": 242
+            },
+            {
+                "title": "World's Greatest Trials, The",
+                "author": "",
+                "genre": "history",
+                "pages": 210
+            },
+            {
+                "title": "Artist and the Mathematician, The",
+                "author": "Aczel, Amir",
+                "genre": "science",
+                "pages": 186
+            },
+            {
+                "title": "Killing Joke, The",
+                "author": "",
+                "genre": "comic",
+                "pages": 283
+            },
+            {
+                "title": "Jim Corbett Omnibus",
+                "author": "Corbett, Jim",
+                "genre": "nonfiction",
+                "pages": 223
+            },
+            {
+                "title": "Angels & Demons",
+                "author": "Brown, Dan",
+                "genre": "fiction",
+                "pages": 170
+            }
+        ]
+    },
+    {
         "age": 34,
         "name": "Lolita Lynn",
         "gender": "female",
@@ -836,656 +1486,6 @@
                 "author": "Dickens, Charles",
                 "genre": "fiction",
                 "pages": 196
-            }
-        ]
-    },
-    {
-        "age": 36,
-        "name": "Ruiz Phelps",
-        "gender": "male",
-        "address": "836 Troutman Street, Harborton, Kentucky, 4030",
-        "books": [
-            {
-                "title": "Trial, The",
-                "author": "Kafka, Frank",
-                "genre": "fiction",
-                "pages": 198
-            },
-            {
-                "title": "Freakonomics",
-                "author": "Dubner, Stephen",
-                "genre": "economics",
-                "pages": 197
-            },
-            {
-                "title": "Prisoner of Birth, A",
-                "author": "Archer, Jeffery",
-                "genre": "fiction",
-                "pages": 176
-            },
-            {
-                "title": "Doctor in the Nude",
-                "author": "Gordon, Richard",
-                "genre": "fiction",
-                "pages": 179
-            },
-            {
-                "title": "Rosy is My Relative",
-                "author": "Durrell, Gerald",
-                "genre": "fiction",
-                "pages": 176
-            },
-            {
-                "title": "Power Electronics - Rashid",
-                "author": "Rashid, Muhammad",
-                "genre": "computer_science",
-                "pages": 235
-            },
-            {
-                "title": "Oxford book of Modern Science Writing",
-                "author": "Dawkins, Richard",
-                "genre": "science",
-                "pages": 240
-            }
-        ]
-    },
-    {
-        "age": 31,
-        "name": "Carolina Bryant",
-        "gender": "female",
-        "address": "377 Middagh Street, Ellerslie, Nebraska, 2644",
-        "books": [
-            {
-                "title": "Statistical Decision Theory'",
-                "author": "Pratt, John",
-                "genre": "data_science",
-                "pages": 236
-            },
-            {
-                "title": "Hidden Connections, The",
-                "author": "Capra, Fritjof",
-                "genre": "science",
-                "pages": 197
-            },
-            {
-                "title": "Scoop!",
-                "author": "Nayar, Kuldip",
-                "genre": "history",
-                "pages": 216
-            },
-            {
-                "title": "Down and Out in Paris & London",
-                "author": "Orwell, George",
-                "genre": "nonfiction",
-                "pages": 179
-            },
-            {
-                "title": "Moon and Sixpence, The",
-                "author": "Maugham, William S",
-                "genre": "fiction",
-                "pages": 180
-            },
-            {
-                "title": "Power Electronics - Mohan",
-                "author": "Mohan, Ned",
-                "genre": "computer_science",
-                "pages": 237
-            },
-            {
-                "title": "Justice, Judiciary and Democracy",
-                "author": "Ranjan, Sudhanshu",
-                "genre": "philosophy",
-                "pages": 224
-            }
-        ]
-    },
-    {
-        "age": 31,
-        "name": "Sosa Lee",
-        "gender": "male",
-        "address": "364 Holly Street, Omar, California, 5140",
-        "books": [
-            {
-                "title": "Data Mining Handbook",
-                "author": "Nisbet, Robert",
-                "genre": "data_science",
-                "pages": 242
-            },
-            {
-                "title": "Story of Philosophy, The",
-                "author": "Durant, Will",
-                "genre": "philosophy",
-                "pages": 170
-            },
-            {
-                "title": "Ahe Manohar Tari",
-                "author": "Deshpande, Sunita",
-                "genre": "nonfiction",
-                "pages": 213
-            },
-            {
-                "title": "Identity & Violence",
-                "author": "Sen, Amartya",
-                "genre": "philosophy",
-                "pages": 219
-            },
-            {
-                "title": "Political Philosophers",
-                "author": "",
-                "genre": "philosophy",
-                "pages": 162
-            },
-            {
-                "title": "Neural Networks",
-                "author": "Haykin, Simon",
-                "genre": "data_science",
-                "pages": 240
-            },
-            {
-                "title": "Arthashastra, The",
-                "author": "Kautiyla",
-                "genre": "philosophy",
-                "pages": 214
-            }
-        ]
-    },
-    {
-        "age": 24,
-        "name": "Lorna Scott",
-        "gender": "female",
-        "address": "878 Marconi Place, Gerton, Alabama, 845",
-        "books": [
-            {
-                "title": "New Machiavelli, The",
-                "author": "Wells, H. G.",
-                "genre": "fiction",
-                "pages": 180
-            },
-            {
-                "title": "Asami Asami",
-                "author": "Deshpande, P L",
-                "genre": "fiction",
-                "pages": 205
-            },
-            {
-                "title": "Last Mughal, The",
-                "author": "Dalrymple, William",
-                "genre": "history",
-                "pages": 199
-            },
-            {
-                "title": "Beyond the Three Seas",
-                "author": "Dalrymple, William",
-                "genre": "history",
-                "pages": 197
-            },
-            {
-                "title": "Short History of the World, A",
-                "author": "Wells, H G",
-                "genre": "history",
-                "pages": 197
-            },
-            {
-                "title": "Grapes of Wrath, The",
-                "author": "Steinbeck, John",
-                "genre": "fiction",
-                "pages": 196
-            },
-            {
-                "title": "We the People",
-                "author": "Palkhivala",
-                "genre": "philosophy",
-                "pages": 216
-            }
-        ]
-    },
-    {
-        "age": 32,
-        "name": "Bernard Holden",
-        "gender": "male",
-        "address": "674 Pine Street, Conestoga, Mississippi, 4727",
-        "books": [
-            {
-                "title": "Physics & Philosophy",
-                "author": "Heisenberg, Werner",
-                "genre": "science",
-                "pages": 197
-            },
-            {
-                "title": "Journal of a Novel",
-                "author": "Steinbeck, John",
-                "genre": "fiction",
-                "pages": 196
-            },
-            {
-                "title": "Social Choice & Welfare, Vol 39 No. 1",
-                "author": "Various",
-                "genre": "economics",
-                "pages": 235
-            },
-            {
-                "title": "World's Greatest Short Stories, The",
-                "author": "",
-                "genre": "fiction",
-                "pages": 217
-            },
-            {
-                "title": "Trembling of a Leaf, The",
-                "author": "Maugham, William S",
-                "genre": "fiction",
-                "pages": 205
-            },
-            {
-                "title": "Vyakti ani Valli",
-                "author": "Deshpande, P L",
-                "genre": "nonfiction",
-                "pages": 211
-            },
-            {
-                "title": "We the Nation",
-                "author": "Palkhivala",
-                "genre": "philosophy",
-                "pages": 216
-            }
-        ]
-    },
-    {
-        "age": 31,
-        "name": "Craft Shields",
-        "gender": "male",
-        "address": "586 Java Street, Catherine, Arkansas, 1445",
-        "books": [
-            {
-                "title": "Making Software",
-                "author": "Oram, Andy",
-                "genre": "computer_science",
-                "pages": 232
-            },
-            {
-                "title": "Once There Was a War",
-                "author": "Steinbeck, John",
-                "genre": "nonfiction",
-                "pages": 196
-            },
-            {
-                "title": "Radiowaril Bhashane & Shrutika",
-                "author": "Deshpande, P L",
-                "genre": "nonfiction",
-                "pages": 213
-            },
-            {
-                "title": "Talking Straight",
-                "author": "Iacoca, Lee",
-                "genre": "nonfiction",
-                "pages": 175
-            },
-            {
-                "title": "Doctor on the Brain",
-                "author": "Gordon, Richard",
-                "genre": "fiction",
-                "pages": 204
-            },
-            {
-                "title": "Statistical Learning Theory",
-                "author": "Vapnik, Vladimir",
-                "genre": "data_science",
-                "pages": 228
-            },
-            {
-                "title": "Courtroom Genius, The",
-                "author": "Sorabjee",
-                "genre": "nonfiction",
-                "pages": 217
-            }
-        ]
-    },
-    {
-        "age": 23,
-        "name": "Mara English",
-        "gender": "female",
-        "address": "324 Herkimer Court, Boomer, Delaware, 5367",
-        "books": [
-            {
-                "title": "Analysis, Vol I",
-                "author": "Tao, Terence",
-                "genre": "mathematics",
-                "pages": 248
-            },
-            {
-                "title": "Moon is Down, The",
-                "author": "Steinbeck, John",
-                "genre": "fiction",
-                "pages": 196
-            },
-            {
-                "title": "Gun Gayin Awadi",
-                "author": "Deshpande, P L",
-                "genre": "nonfiction",
-                "pages": 212
-            },
-            {
-                "title": "Maugham's Collected Short Stories, Vol 3",
-                "author": "Maugham, William S",
-                "genre": "fiction",
-                "pages": 171
-            },
-            {
-                "title": "Simpsons & Their Mathematical Secrets",
-                "author": "Singh, Simon",
-                "genre": "science",
-                "pages": 233
-            },
-            {
-                "title": "Empire of the Mughal - The Tainted Throne",
-                "author": "Rutherford, Alex",
-                "genre": "history",
-                "pages": 180
-            },
-            {
-                "title": "Dongri to Dubai",
-                "author": "Zaidi, Hussain",
-                "genre": "nonfiction",
-                "pages": 216
-            }
-        ]
-    },
-    {
-        "age": 30,
-        "name": "Fisher Levy",
-        "gender": "male",
-        "address": "540 Adler Place, Hachita, Federated States Of Micronesia, 9894",
-        "books": [
-            {
-                "title": "Machine Learning for Hackers",
-                "author": "Conway, Drew",
-                "genre": "data_science",
-                "pages": 233
-            },
-            {
-                "title": "Brethren, The",
-                "author": "Grisham, John",
-                "genre": "fiction",
-                "pages": 174
-            },
-            {
-                "title": "Aghal Paghal",
-                "author": "Deshpande, P L",
-                "genre": "nonfiction",
-                "pages": 212
-            },
-            {
-                "title": "Phantom of Manhattan, The",
-                "author": "Forsyth, Frederick",
-                "genre": "fiction",
-                "pages": 180
-            },
-            {
-                "title": "Pattern Classification",
-                "author": "Duda, Hart",
-                "genre": "data_science",
-                "pages": 241
-            },
-            {
-                "title": "Empire of the Mughal - Brothers at War",
-                "author": "Rutherford, Alex",
-                "genre": "history",
-                "pages": 180
-            },
-            {
-                "title": "History of England, Foundation",
-                "author": "Ackroyd, Peter",
-                "genre": "history",
-                "pages": 197
-            }
-        ]
-    },
-    {
-        "age": 25,
-        "name": "Cecelia Snyder",
-        "gender": "female",
-        "address": "236 Anchorage Place, Odessa, Michigan, 6314",
-        "books": [
-            {
-                "title": "Signal and the Noise, The",
-                "author": "Silver, Nate",
-                "genre": "data_science",
-                "pages": 233
-            },
-            {
-                "title": "In a Free State",
-                "author": "Naipaul, V. S.",
-                "genre": "fiction",
-                "pages": 196
-            },
-            {
-                "title": "Maqta-e-Ghalib",
-                "author": "Garg, Sanjay",
-                "genre": "fiction",
-                "pages": 221
-            },
-            {
-                "title": "Ashenden of The British Agent",
-                "author": "Maugham, William S",
-                "genre": "fiction",
-                "pages": 160
-            },
-            {
-                "title": "From Beirut to Jerusalem",
-                "author": "Friedman, Thomas",
-                "genre": "history",
-                "pages": 202
-            },
-            {
-                "title": "Empire of the Mughal - Ruler of the World",
-                "author": "Rutherford, Alex",
-                "genre": "history",
-                "pages": 180
-            },
-            {
-                "title": "City of Djinns",
-                "author": "Dalrymple, William",
-                "genre": "history",
-                "pages": 198
-            }
-        ]
-    },
-    {
-        "age": 22,
-        "name": "Nina Kaufman",
-        "gender": "female",
-        "address": "538 Ashford Street, Boling, West Virginia, 7840",
-        "books": [
-            {
-                "title": "Python for Data Analysis",
-                "author": "McKinney, Wes",
-                "genre": "data_science",
-                "pages": 233
-            },
-            {
-                "title": "Catch 22",
-                "author": "Heller, Joseph",
-                "genre": "fiction",
-                "pages": 178
-            },
-            {
-                "title": "Beyond Degrees",
-                "author": "",
-                "genre": "nonfiction",
-                "pages": 222
-            },
-            {
-                "title": "Zen & The Art of Motorcycle Maintenance",
-                "author": "Pirsig, Robert",
-                "genre": "philosophy",
-                "pages": 172
-            },
-            {
-                "title": "Code Book, The",
-                "author": "Singh, Simon",
-                "genre": "science",
-                "pages": 197
-            },
-            {
-                "title": "Empire of the Mughal - The Serpent's Tooth",
-                "author": "Rutherford, Alex",
-                "genre": "history",
-                "pages": 180
-            },
-            {
-                "title": "India's Legal System",
-                "author": "Nariman",
-                "genre": "nonfiction",
-                "pages": 177
-            }
-        ]
-    },
-    {
-        "age": 37,
-        "name": "Dillard Branch",
-        "gender": "male",
-        "address": "225 Hampton Avenue, Bethany, Pennsylvania, 8056",
-        "books": [
-            {
-                "title": "Introduction to Algorithms",
-                "author": "Cormen, Thomas",
-                "genre": "computer_science",
-                "pages": 234
-            },
-            {
-                "title": "Complete Mastermind, The",
-                "author": "BBC",
-                "genre": "nonfiction",
-                "pages": 178
-            },
-            {
-                "title": "Manasa",
-                "author": "Kale, V P",
-                "genre": "nonfiction",
-                "pages": 213
-            },
-            {
-                "title": "Great War for Civilization, The",
-                "author": "Fisk, Robert",
-                "genre": "history",
-                "pages": 197
-            },
-            {
-                "title": "Age of the Warrior, The",
-                "author": "Fisk, Robert",
-                "genre": "history",
-                "pages": 197
-            },
-            {
-                "title": "Empire of the Mughal - Raiders from the North",
-                "author": "Rutherford, Alex",
-                "genre": "history",
-                "pages": 180
-            },
-            {
-                "title": "More Tears to Cry",
-                "author": "Sassoon, Jean",
-                "genre": "fiction",
-                "pages": 235
-            }
-        ]
-    },
-    {
-        "age": 33,
-        "name": "Dyer Bartlett",
-        "gender": "male",
-        "address": "880 Meadow Street, Seymour, Puerto Rico, 7921",
-        "books": [
-            {
-                "title": "Beautiful and the Damned, The",
-                "author": "Deb, Siddhartha",
-                "genre": "nonfiction",
-                "pages": 198
-            },
-            {
-                "title": "Dylan on Dylan",
-                "author": "Dylan, Bob",
-                "genre": "nonfiction",
-                "pages": 197
-            },
-            {
-                "title": "India from Midnight to Milennium",
-                "author": "Tharoor, Shashi",
-                "genre": "history",
-                "pages": 198
-            },
-            {
-                "title": "We the Living",
-                "author": "Rand, Ayn",
-                "genre": "fiction",
-                "pages": 178
-            },
-            {
-                "title": "Final Crisis",
-                "author": "",
-                "genre": "comic",
-                "pages": 257
-            },
-            {
-                "title": "Mossad",
-                "author": "Baz-Zohar, Michael",
-                "genre": "history",
-                "pages": 236
-            },
-            {
-                "title": "Ropemaker, The",
-                "author": "Dickinson, Peter",
-                "genre": "fiction",
-                "pages": 196
-            }
-        ]
-    },
-    {
-        "age": 20,
-        "name": "Tyler Dotson",
-        "gender": "male",
-        "address": "220 Herkimer Place, Turpin, Oklahoma, 4468",
-        "books": [
-            {
-                "title": "Outsider, The",
-                "author": "Camus, Albert",
-                "genre": "fiction",
-                "pages": 198
-            },
-            {
-                "title": "Soft Computing & Intelligent Systems",
-                "author": "Gupta, Madan",
-                "genre": "data_science",
-                "pages": 242
-            },
-            {
-                "title": "World's Greatest Trials, The",
-                "author": "",
-                "genre": "history",
-                "pages": 210
-            },
-            {
-                "title": "Artist and the Mathematician, The",
-                "author": "Aczel, Amir",
-                "genre": "science",
-                "pages": 186
-            },
-            {
-                "title": "Killing Joke, The",
-                "author": "",
-                "genre": "comic",
-                "pages": 283
-            },
-            {
-                "title": "Jim Corbett Omnibus",
-                "author": "Corbett, Jim",
-                "genre": "nonfiction",
-                "pages": 223
-            },
-            {
-                "title": "Angels & Demons",
-                "author": "Brown, Dan",
-                "genre": "fiction",
-                "pages": 170
             }
         ]
     }
