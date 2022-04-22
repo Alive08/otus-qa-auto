@@ -1,5 +1,6 @@
 from email.policy import strict
 from enum import Enum
+from unittest.result import failfast
 import pytest
 from jsonschema import validate
 from jsonschema.exceptions import ValidationError
@@ -51,7 +52,7 @@ class Brewery(BaseModel):
 
 
 class NonEmptyBreweryList(BaseModel):
-    l: conlist(item_type=Brewery, min_items=1)
+    __root__: conlist(item_type=Brewery, min_items=1)
 
 
 class BreweryList(BaseModel):
@@ -82,6 +83,14 @@ def brewery(request):
     yield request.param
 
 
+@pytest.fixture(params=breweries(), ids=lambda v: v['city'], scope='session')
+def city(request):
+    done = []
+    if request.param['city'] not in done:
+        done.append(request.param['city'])
+        yield request.param['city']
+
+
 def test_brewery_list_all(brewery):
     validate_object(Brewery, brewery)
 
@@ -93,18 +102,29 @@ def test_brewery_search(api):
         validate_object(Brewery, item)
 
 
-@pytest.mark.parametrize('brewery_type', [bt.value for bt in BreweryType])
+# есть элемент с типом 'proprietor', но API понимает 'proprieter'
+xfailed = ['proprieter']
+skipped = []
+
+
+@pytest.mark.parametrize('brewery_type',
+                         [bt.value for bt in BreweryType
+                          if bt.value not in (xfailed + skipped)] +
+                         [pytest.param(p, marks=pytest.mark.xfail(strict=True))
+                          for p in xfailed] +
+                         [pytest.param(p, marks=pytest.mark.skip)
+                          for p in skipped]
+                         )
 def test_brewery_search_by_type(api, brewery_type):
     r = api.GET('/', params={'by_type': brewery_type})
     assert r.ok
-    validate_object(BreweryList, r.json())
+    validate_object(NonEmptyBreweryList, r.json())
 
 
-@pytest.mark.parametrize('city', ['Evergreen'])
 def test_brewery_search_by_city(api, city):
     r = api.GET('/', params={'by_city': city})
     assert r.ok
-    validate_object(BreweryList, r.json())
+    validate_object(NonEmptyBreweryList, r.json())
 
 
 # by_city
@@ -120,3 +140,24 @@ def test_brewery_search_by_city(api, city):
 # get a single brewery
 # breweries/search?query=dog - search
 # /breweries/autocomplete?query=dog - autocomplete
+
+
+# xfailed = [0, 2]
+# skipped = [1, 4]
+
+
+# @pytest.mark.parametrize('p', [p for p in range(6) if p not in (*xfailed, *skipped)] +
+#                          [pytest.param(p, marks=pytest.mark.xfail(strict=True))
+#                           for p in xfailed] +
+#                          [pytest.param(p, marks=pytest.mark.skip)
+#                           for p in skipped]
+#                          )
+# def test_fun(p):
+#     assert {
+#         0: False,
+#         1: True,
+#         2: False,
+#         3: True,
+#         4: True,
+#         5: True,
+#     }[p]
