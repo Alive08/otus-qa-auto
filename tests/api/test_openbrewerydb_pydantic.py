@@ -69,7 +69,7 @@ def validate_object(cls, obj):
 
 @pytest.fixture(scope='session')
 def api():
-    yield SimpleApiClient(url=base_url, verify=False, proxies=proxies)
+    yield SimpleApiClient(url=base_url, verify=False, proxies=None)
 
 
 def breweries():
