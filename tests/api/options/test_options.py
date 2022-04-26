@@ -13,4 +13,4 @@ def status_code(request):
 
 
 def test_response_status(url, status_code):
-    assert requests.get(url).status_code == int(status_code)
+    assert requests.get(url).status_code == status_code

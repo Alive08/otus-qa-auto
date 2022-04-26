@@ -5,6 +5,6 @@ def pytest_addoption(parser):
                      help='url options: url for web request')
 
     parser.addoption('--status_code',
-                     default='200',
+                     default=200,
                      help='status_code options: web response status code')
     

@@ -17,7 +17,7 @@ CHOICES = 3
 
 @pytest.fixture(scope='session')
 def api():
-    yield SimpleApiClient(url=base_url, verify=False, proxies=None)
+    yield SimpleApiClient(url=base_url, verify=False, proxies=proxies)
 
 
 def breweries():
@@ -42,18 +42,20 @@ random_choises = {k: random.sample(raw[k], CHOICES) for k in (
     'id', 'name', 'city', 'country', 'state', 'postal_code')}
 
 
-def params_filtered(p):
-    return [item for item in random_choises[p] if item not in xfailed[p]] + \
-        [pytest.param(item, marks=pytest.mark.xfail(strict=True))
-         for item in random_choises[p] if item in xfailed[p]]
+def params_filter(p_name):
+    def wrapper(p):
+        if p in xfailed[p_name]:
+            return pytest.param(p, marks=pytest.mark.xfail(strict=True))
+        return p
+    return wrapper
 
 
-@ pytest.fixture(params=params_filtered('id'), scope='session')
+@ pytest.fixture(params=map(params_filter('id'), random_choises['id']), scope='session')
 def brewery_id(request):
     yield request.param
 
 
-@ pytest.fixture(params=params_filtered('name'), scope='session')
+@ pytest.fixture(params=map(params_filter('name'), random_choises['name']), scope='session')
 def brewery_name(request):
     yield request.param
 
@@ -63,22 +65,22 @@ def brewery_type(request):
     yield request.param
 
 
-@ pytest.fixture(params=params_filtered('city'), scope='session')
+@ pytest.fixture(params=map(params_filter('city'), random_choises['city']), scope='session')
 def city(request):
     yield request.param
 
 
-@ pytest.fixture(params=params_filtered('state'), scope='session')
+@ pytest.fixture(params=map(params_filter('state'), random_choises['state']), scope='session')
 def state(request):
     yield request.param
 
 
-@ pytest.fixture(params=params_filtered('country'), scope='session')
+@ pytest.fixture(params=map(params_filter('country'), random_choises['country']), scope='session')
 def country(request):
     yield request.param
 
 
-@ pytest.fixture(params=params_filtered('postal_code'), scope='session')
+@ pytest.fixture(params=map(params_filter('postal_code'), random_choises['postal_code']), scope='session')
 def postal_code(request):
     yield request.param
 
