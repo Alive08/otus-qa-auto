@@ -23,7 +23,7 @@ class BreedsList(BaseMessage):
     message: list[str]
 
 
-'''Список пород с вложенным списком субпород'''
+'''Список пород c вложенным списком субпород'''
 
 
 class BreedsSubbreedsList(BaseMessage):

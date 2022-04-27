@@ -23,12 +23,27 @@ class SimpleApiClient:
     def url(self, value):
         self.__url = value
 
+    def REQUEST(self, method, url='', **kwargs):
+        return self.session.request(method, self.url + url, **kwargs)
+
     def GET(self, url='', **kwargs):
-        self.response = self.session.get(self.url + url, **kwargs)
+        self.response = self.REQUEST('GET', url, **kwargs)
         return self.response
 
     def POST(self, url='', **kwargs):
-        self.response = self.session.post(self.url + url, **kwargs)
+        self.response = self.REQUEST('POST', url, **kwargs)
+        return self.response
+
+    def PUT(self, url='', **kwargs):
+        self.response = self.REQUEST('PUT', url, **kwargs)
+        return self.response
+
+    def PATCH(self, url='', **kwargs):
+        self.response = self.REQUEST('PATCH', url, **kwargs)
+        return self.response
+
+    def DELETE(self, url='', **kwargs):
+        self.response = self.REQUEST('DELETE', url, **kwargs)
         return self.response
 
     def get_all_pages(self, url='', **kwargs):

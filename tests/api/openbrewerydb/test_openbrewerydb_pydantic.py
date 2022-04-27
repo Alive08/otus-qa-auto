@@ -81,7 +81,7 @@ def test_get_single_brewery(api, brewery_id):
     validate_object(Brewery, r.json())
 
 
-@pytest.mark.xfail(strict=True, reason='Should be not more than 15 items per request')
+@pytest.mark.xfail(strict=True, reason='Should not be more than 15 items per request')
 def test_autocomplete_limit(api):
     r = api.GET('/autocomplete', params={'query': 'good'})
     assert r.ok
@@ -115,31 +115,26 @@ def test_brewery_search_by_type(api, brewery_type):
     validate_object(NonEmptyBreweryList, r)
 
 
-# @pytest.mark.parametrize('brewery_name', [''])
 def test_brewery_search_by_name(api, brewery_name):
     r = api.get_all_pages('/', params={'by_name': brewery_name})
     validate_object(NonEmptyBreweryList, r)
 
 
-# @pytest.mark.parametrize('city', ['San Jose'])
 def test_brewery_search_by_city(api, city):
     r = api.get_all_pages('/', params={'by_city': city, 'per_page': 50})
     validate_object(NonEmptyBreweryList, r)
 
 
-# @pytest.mark.parametrize('state', ['Indiana'])
 def test_brewery_search_by_state(api, state):
     r = api.get_all_pages('/', params={'by_state': state})
     validate_object(NonEmptyBreweryList, r)
 
 
-# @pytest.mark.parametrize('country', ['United States', 'Ireland'])
 def test_brewery_search_by_country(api, country):
     r = api.get_all_pages('/', params={'by_country': country})
     validate_object(NonEmptyBreweryList, r)
 
 
-# @pytest.mark.parametrize('postal_code', ['5104-1806', '80234-1313', '20166-9557'])
 def test_brewery_search_by_postal(api, postal_code):
     r = api.get_all_pages('/', params={'by_postal': postal_code})
     validate_object(NonEmptyBreweryList, r)
@@ -150,7 +145,3 @@ def test_per_page(api, per_page, expected):
     r = api.GET('/', params={'per_page': per_page})
     assert r.ok
     assert len(r.json()) == expected
-
-
-if __name__ == '__main__':
-    pass
