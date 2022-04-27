@@ -9,35 +9,21 @@ proxies = {
     "https": "http://localhost:8080"
 }
 
-'''Базовое сообщение'''
-
 
 class BaseMessage(BaseModel):
     status: str
-
-
-'''Плоский список пород или субпород'''
 
 
 class BreedsList(BaseMessage):
     message: list[str]
 
 
-'''Список пород c вложенным списком субпород'''
-
-
 class BreedsSubbreedsList(BaseMessage):
     message: dict[str, list[str]]
 
 
-'''Ссылка на отдельное изображение'''
-
-
 class ImageUrl(BaseMessage):
     message: HttpUrl
-
-
-'''Список ссылок на изображения'''
 
 
 class ImageUrlList(BaseMessage):
@@ -52,7 +38,6 @@ def validate_object(cls, obj):
         pytest.fail()
 
 
-# full list of breeds with sub-breeds
 raw_breeds_list = SimpleApiClient(url=base_url, verify=False, proxies=None).GET(
     '/breeds/list/all').json()['message']
 
