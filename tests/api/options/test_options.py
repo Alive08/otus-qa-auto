@@ -9,7 +9,7 @@ def url(request):
 
 @pytest.fixture
 def status_code(request):
-    return request.config.getoption('--status_code')
+    return int(request.config.getoption('--status_code'))
 
 
 def test_response_status(url, status_code):

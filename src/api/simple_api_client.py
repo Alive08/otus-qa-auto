@@ -1,6 +1,11 @@
+import warnings
+
 import requests
 from jsonschema import validate
 from jsonschema.exceptions import ValidationError
+from urllib3.exceptions import InsecureRequestWarning
+
+warnings.simplefilter('ignore', InsecureRequestWarning)
 
 
 class SimpleApiClient:

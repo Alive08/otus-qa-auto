@@ -37,7 +37,7 @@ for b in breweries():
 
 
 def choises(k, n):
-    return random.sample(raw[k], n)
+    return random.sample(list(raw[k]), n)
 
 
 def params_filter(p_name):
