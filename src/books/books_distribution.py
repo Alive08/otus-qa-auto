@@ -1,12 +1,27 @@
 import json
 from csv import DictReader
+from time import time
+from functools import reduce
 
-books_file = "src/books/data/books.csv"
-users_file = "src/books/data/users.json"
+books_file = "src/books/books.csv"
+users_file = "src/books/users.json"
 result_file = "src/books/result.json"
 
 USER_ATTRS = ('name', 'gender', 'address', 'age', 'books')
 BOOK_ATTRS = ('title', 'author', 'pages', 'genre')
+
+
+def benchmark(func):
+
+    def wrapper(*args, **kwargs):
+        start = time()
+        result = func(*args, **kwargs)
+        end = time()
+        t = end - start
+        print('Время выполнения:', t)
+        return result
+
+    return wrapper
 
 
 def tryconvert(*types):
@@ -34,10 +49,13 @@ def gen_json(file):
             yield {k: v for k, v in entry.items() if k in USER_ATTRS}
 
 
-if __name__ == '__main__':
+@benchmark
+def run():
+    gen_users = gen_json(users_file)
+    gen_books = gen_csv(books_file)
+    users = []
 
-    i = 0
-    total_books = 0
+    '''i = 0
     users = list(gen_json(users_file))
     for b in gen_csv(books_file):
         try:
@@ -45,9 +63,22 @@ if __name__ == '__main__':
         except IndexError:
             i = 0
         users[i]['books'].append(b)
-        total_books += 1
-        i += 1
-    del i
+        i += 1'''
+
+    # for test
+    # list(gen_users)
+    # list(gen_books)
+
+    for book in gen_books:          # извлекаем книги из генератора до исчерпания
+        try:
+            user = next(gen_users)  # извлекаем юзера из генератора
+        except StopIteration:       # если генератор юзеров исчерпан,
+            try:
+                user = users.pop(0) # берем первый элемент списка юзеров
+            except IndexError:      # список юзеров пуст, возможно пустой файл
+                break               # некому раздавать, заканчиваем
+        users.append(user)          # добавляем юзера в конец списка
+        user['books'].append(book)  # добавляем юзеру книгу
 
     with open(result_file, mode='w') as f:
         try:
@@ -56,4 +87,9 @@ if __name__ == '__main__':
             print(e)
         else:
             print(
-                f"{total_books} books have been distributed among {len(users)} users")
+                f"{reduce(lambda x, y: x + len(y['books']), users, 0)} books have been distributed among {len(users)} users")
+                # sum(map(len, (u['books'] for u in users)))
+
+if __name__ == '__main__':
+
+    run()
