@@ -159,17 +159,3 @@ def test_get_single_post(api, postid):
     assert r.ok
     validate_object(Post, r.json())
 
-
-# /posts/1/comments
-# /albums/1/photos
-# /users/1/albums
-# /users/1/todos
-# /users/1/posts
-# GET	/posts
-# GET	/posts/1
-# GET	/posts/1/comments
-# GET	/comments?postId=1
-# POST	/posts
-# PUT	/posts/1
-# PATCH	/posts/1
-# DELETE	/posts/1
