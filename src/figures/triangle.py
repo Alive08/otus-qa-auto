@@ -28,7 +28,7 @@ class Triangle(Figure):
         ограничение реализации - проверяем при изменении размеров
         только если объект уже был полностью иницииализирован ранее
         '''
-        print("__setattr__: ", __name, __value)
+        # print("__setattr__: ", __name, __value)
         if __name in ('a', 'b', 'c'):
             NonNegative.verify_this(__value)
             if self.__initialized:
